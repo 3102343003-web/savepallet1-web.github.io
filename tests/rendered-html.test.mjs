@@ -26,6 +26,7 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /仅近 30 天/);
   assert.match(html, /省多多北美卡车平台/);
   assert.match(html, /货马达美国卡车运输平台/);
+  assert.match(html, /data-category="市场运价"/);
   assert.match(html, /省多多/);
   assert.match(html, /货马达/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
@@ -43,4 +44,11 @@ test("starter preview dependencies and markers are removed", async () => {
   assert.doesNotMatch(page, /link:\s*"https:\/\/www\.freightwaves\.com\/news\/category\//);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
+});
+
+test("GitHub Pages export is self-contained", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /href="\.\/app\/globals\.css"/);
+  assert.match(html, /data-category="市场运价"/);
+  assert.doesNotMatch(html, /__VINEXT|\/assets\//);
 });
