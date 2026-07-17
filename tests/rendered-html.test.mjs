@@ -18,7 +18,7 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /<title>卡卡省｜美国卡派资讯 &amp; 竞对动态监控<\/title>/i);
+  assert.match(html, /<title>卡卡省-美国卡派资讯&amp;竞对动态监控网站<\/title>/i);
   assert.match(html, /今日热点 TOP 3/);
   assert.match(html, /竞对动态监控/);
   assert.match(html, /FreightWaves/);
