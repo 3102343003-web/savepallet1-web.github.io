@@ -11,12 +11,13 @@ html = html
   .replace(/<link rel="modulepreload"[^>]*>/g, "")
   .replace(/<script[^>]*>[\s\S]*?<\/script>/g, "")
   .replace(/<\/html>[\s\S]*$/, "</html>")
-  .replace(/<link rel="stylesheet"[^>]*>/, '<link rel="stylesheet" href="./styles.css">');
+  .replace(/<link rel="stylesheet"[^>]*>/, '<link rel="stylesheet" href="./app/globals.css">');
 
 const interactions = `<script>
 (() => {
   const rows = [...document.querySelectorAll(".news-row")];
   const buttons = [...document.querySelectorAll(".filter-row button")];
+  const topicButtons = [...document.querySelectorAll(".topic-list button[data-filter]")];
   const input = document.querySelector(".search-box input");
   let active = "全部";
   const apply = () => {
@@ -30,7 +31,16 @@ const interactions = `<script>
   buttons.forEach((button) => button.addEventListener("click", () => {
     active = button.textContent?.trim() || "全部";
     buttons.forEach((item) => item.classList.toggle("active", item === button));
+    topicButtons.forEach((item) => item.classList.toggle("active", item.dataset.filter === active));
     apply();
+  }));
+  topicButtons.forEach((button) => button.addEventListener("click", () => {
+    active = button.dataset.filter || "全部";
+    if (input) input.value = "";
+    buttons.forEach((item) => item.classList.toggle("active", item.textContent?.trim() === active));
+    topicButtons.forEach((item) => item.classList.toggle("active", item === button));
+    apply();
+    document.querySelector("#news")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }));
   input?.addEventListener("input", apply);
   document.querySelectorAll(".news-actions button").forEach((button) => {

@@ -27,8 +27,14 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /省多多北美卡车平台/);
   assert.match(html, /货马达美国卡车运输平台/);
   assert.match(html, /data-category="市场运价"/);
+  assert.match(html, /data-filter="市场运价"/);
+  assert.match(html, /筛选运价与货量专题/);
   assert.match(html, /省多多/);
   assert.match(html, /货马达/);
+  assert.match(html, /https:\/\/xhslink\.com\/m\/75sNtVt2wwW/);
+  assert.match(html, /https:\/\/v\.douyin\.com\/xEe-XTIB5VA/);
+  assert.match(html, /小红书(?:<!-- -->)? ↗/);
+  assert.match(html, /公众号(?:<!-- -->)? · 待补/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
@@ -50,5 +56,7 @@ test("GitHub Pages export is self-contained", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, /href="\.\/app\/globals\.css"/);
   assert.match(html, /data-category="市场运价"/);
+  assert.match(html, /data-filter="市场运价"/);
+  assert.match(html, /topicButtons/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
 });
