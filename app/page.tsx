@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 
 type NewsItem = {
-  time: string;
+  publishedAt: string;
+  publishedDay: string;
   source: string;
   score: number;
   title: string;
@@ -21,11 +22,11 @@ const topStories = [
 ];
 
 const newsItems: NewsItem[] = [
-  { time: "08:32", source: "FreightWaves", score: 88, title: "美国卡车运输成本持续高于消费者通胀", summary: "最新行业成本研究显示，保险、人工与设备维护仍是主要压力。对中国跨境企业而言，美国尾程报价短期内难以明显回落。", category: "市场运价", impact: "关注", tags: ["运输成本", "保险", "车队"], link: "https://www.freightwaves.com/news/category/news/trucking" },
-  { time: "08:05", source: "FreightWaves", score: 84, title: "多家物流企业关闭与重组，行业运力继续出清", summary: "近期仓储关闭、破产申请与裁员事件延续。短期会带来局部线路运力波动，长期可能改善仍在经营的合规车队利润。", category: "公司动态", impact: "风险", tags: ["倒闭", "裁员", "运力"], link: "https://www.freightwaves.com/news/category/news" },
-  { time: "07:46", source: "FreightWaves", score: 81, title: "美国监管部门加强商用车辆与驾驶资质检查", summary: "多个州近期扩大路检与称重站联合执法。无有效 CDL、设备记录异常或安全评分偏低的承运商面临停运风险。", category: "法规合规", impact: "风险", tags: ["FMCSA", "CDL", "路检"], link: "https://www.freightwaves.com/news/category/news/trucking" },
-  { time: "07:22", source: "FreightWaves", score: 77, title: "美国司机薪酬指数近期明显上升", summary: "司机薪酬在过去两个月加速上涨，反映合格司机供给仍然偏紧。旺季前需关注长途线路与偏远区域的加价风险。", category: "司机与车队", impact: "关注", tags: ["司机", "薪酬", "旺季"], link: "https://www.freightwaves.com/news/category/news/trucking" },
-  { time: "06:58", source: "FreightWaves", score: 74, title: "美国港口附近绿色卡车走廊项目继续推进", summary: "零排放卡车走廊正在连接主要港口与跨境节点，未来可能影响港区短驳设备、车队准入和相关附加费用。", category: "新能源", impact: "利好", tags: ["港口", "新能源", "短驳"], link: "https://www.freightwaves.com/news/category/news/trucking" },
+  { publishedAt: "07.15", publishedDay: "周三", source: "FreightWaves", score: 88, title: "美国卡车运输成本持续高于消费者通胀", summary: "最新行业成本研究显示，保险、人工与设备维护仍是主要压力。对中国跨境企业而言，美国尾程报价短期内难以明显回落。", category: "市场运价", impact: "关注", tags: ["运输成本", "保险", "车队"], link: "https://www.freightwaves.com/news/trucking-costs-outpaced-consumer-inflation-in-25-atri" },
+  { publishedAt: "07.14", publishedDay: "周二", source: "FreightWaves", score: 84, title: "多家物流企业关闭与重组，行业运力继续出清", summary: "近期仓储关闭、破产申请与裁员事件延续。短期会带来局部线路运力波动，长期可能改善仍在经营的合规车队利润。", category: "公司动态", impact: "风险", tags: ["倒闭", "裁员", "运力"], link: "https://www.freightwaves.com/news/category/news/business/layoffs-and-bankruptcies" },
+  { publishedAt: "06.30", publishedDay: "周二", source: "FreightWaves", score: 81, title: "美国监管部门加强商用车辆与驾驶资质检查", summary: "多个州近期扩大路检与称重站联合执法。无有效 CDL、设备记录异常或安全评分偏低的承运商面临停运风险。", category: "法规合规", impact: "风险", tags: ["FMCSA", "CDL", "路检"], link: "https://www.freightwaves.com/news/us-law-agencies-expand-crackdown-on-commercial-vehicle-violators" },
+  { publishedAt: "07.14", publishedDay: "周二", source: "FreightWaves", score: 77, title: "美国司机薪酬指数近期明显上升", summary: "司机薪酬在过去两个月加速上涨，反映合格司机供给仍然偏紧。旺季前需关注长途线路与偏远区域的加价风险。", category: "司机与车队", impact: "关注", tags: ["司机", "薪酬", "旺季"], link: "https://www.freightwaves.com/news/category/news/trucking" },
+  { publishedAt: "06.26", publishedDay: "周五", source: "FreightWaves", score: 74, title: "美国港口附近绿色卡车走廊项目继续推进", summary: "零排放卡车走廊正在连接主要港口与跨境节点，未来可能影响港区短驳设备、车队准入和相关附加费用。", category: "新能源", impact: "利好", tags: ["港口", "新能源", "短驳"], link: "https://www.freightwaves.com/news/category/news/trucking" },
 ];
 
 const competitors = [
@@ -87,7 +88,7 @@ export default function Home() {
               <div className="section-heading news-heading"><div><span className="section-index">02</span><h2>最新精选</h2></div><a href="https://www.freightwaves.com/news/category/news/trucking" target="_blank" rel="noreferrer">查看 FreightWaves 原站 ↗</a></div>
               <div className="filter-row" id="topics">{filters.map((filter) => <button className={filter === activeFilter ? "active" : ""} onClick={() => setActiveFilter(filter)} key={filter}>{filter}</button>)}</div>
               <div className="news-list">
-                {visibleNews.map((item) => <article className="news-row" key={item.title}><div className="news-time"><strong>{item.time}</strong><span>{item.source}</span></div><div className="score" aria-label={`重要性评分 ${item.score}`}><strong>{item.score}</strong><span>重要性</span></div><div className="news-body"><div className="news-title-line"><span className={`impact ${item.impact}`}>{item.impact}</span><h3>{item.title}</h3></div><p>{item.summary}</p><div className="tag-row">{item.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div></div><div className="news-actions"><button className={bookmarked.includes(item.title) ? "saved" : ""} onClick={() => toggleBookmark(item.title)} aria-label="收藏资讯">{bookmarked.includes(item.title) ? "★" : "☆"}</button><a href={item.link} target="_blank" rel="noreferrer">原文 ↗</a></div></article>)}
+                {visibleNews.map((item) => <article className="news-row" key={item.title}><div className="news-time"><em>原文发布</em><strong>{item.publishedAt}</strong><small>{item.publishedDay}</small><span>{item.source}</span></div><div className="score" aria-label={`重要性评分 ${item.score}`}><strong>{item.score}</strong><span>重要性</span></div><div className="news-body"><div className="news-title-line"><span className={`impact ${item.impact}`}>{item.impact}</span><h3>{item.title}</h3></div><p>{item.summary}</p><div className="tag-row">{item.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div></div><div className="news-actions"><button className={bookmarked.includes(item.title) ? "saved" : ""} onClick={() => toggleBookmark(item.title)} aria-label="收藏资讯">{bookmarked.includes(item.title) ? "★" : "☆"}</button><a href={item.link} target="_blank" rel="noreferrer">原文 ↗</a></div></article>)}
                 {visibleNews.length === 0 && <div className="empty-state">没有找到匹配的资讯，请更换关键词或分类。</div>}
               </div>
             </section>

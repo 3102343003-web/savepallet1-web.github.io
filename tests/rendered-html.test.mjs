@@ -22,6 +22,7 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /今日热点 TOP 3/);
   assert.match(html, /竞对动态监控/);
   assert.match(html, /FreightWaves/);
+  assert.match(html, /原文发布/);
   assert.match(html, /省多多/);
   assert.match(html, /货马达/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
