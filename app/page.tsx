@@ -23,10 +23,10 @@ const topStories = [
 
 const newsItems: NewsItem[] = [
   { publishedAt: "07.15", publishedDay: "周三", source: "FreightWaves", score: 88, title: "美国卡车运输成本持续高于消费者通胀", summary: "最新行业成本研究显示，保险、人工与设备维护仍是主要压力。对中国跨境企业而言，美国尾程报价短期内难以明显回落。", category: "市场运价", impact: "关注", tags: ["运输成本", "保险", "车队"], link: "https://www.freightwaves.com/news/trucking-costs-outpaced-consumer-inflation-in-25-atri" },
-  { publishedAt: "07.14", publishedDay: "周二", source: "FreightWaves", score: 84, title: "多家物流企业关闭与重组，行业运力继续出清", summary: "近期仓储关闭、破产申请与裁员事件延续。短期会带来局部线路运力波动，长期可能改善仍在经营的合规车队利润。", category: "公司动态", impact: "风险", tags: ["倒闭", "裁员", "运力"], link: "https://www.freightwaves.com/news/category/news/business/layoffs-and-bankruptcies" },
+  { publishedAt: "07.14", publishedDay: "周二", source: "FreightWaves", score: 84, title: "多家物流企业关闭与重组，行业运力继续出清", summary: "近期仓储关闭、破产申请与裁员事件延续。短期会带来局部线路运力波动，长期可能改善仍在经营的合规车队利润。", category: "公司动态", impact: "风险", tags: ["倒闭", "裁员", "运力"], link: "https://www.freightwaves.com/news/freight-distress-report-carrier-logistics-closures-erase-over-245-jobs" },
   { publishedAt: "06.30", publishedDay: "周二", source: "FreightWaves", score: 81, title: "美国监管部门加强商用车辆与驾驶资质检查", summary: "多个州近期扩大路检与称重站联合执法。无有效 CDL、设备记录异常或安全评分偏低的承运商面临停运风险。", category: "法规合规", impact: "风险", tags: ["FMCSA", "CDL", "路检"], link: "https://www.freightwaves.com/news/us-law-agencies-expand-crackdown-on-commercial-vehicle-violators" },
-  { publishedAt: "07.14", publishedDay: "周二", source: "FreightWaves", score: 77, title: "美国司机薪酬指数近期明显上升", summary: "司机薪酬在过去两个月加速上涨，反映合格司机供给仍然偏紧。旺季前需关注长途线路与偏远区域的加价风险。", category: "司机与车队", impact: "关注", tags: ["司机", "薪酬", "旺季"], link: "https://www.freightwaves.com/news/category/news/trucking" },
-  { publishedAt: "06.26", publishedDay: "周五", source: "FreightWaves", score: 74, title: "美国港口附近绿色卡车走廊项目继续推进", summary: "零排放卡车走廊正在连接主要港口与跨境节点，未来可能影响港区短驳设备、车队准入和相关附加费用。", category: "新能源", impact: "利好", tags: ["港口", "新能源", "短驳"], link: "https://www.freightwaves.com/news/category/news/trucking" },
+  { publishedAt: "07.14", publishedDay: "周二", source: "FreightWaves", score: 77, title: "美国司机薪酬指数近期明显上升", summary: "司机薪酬在过去两个月加速上涨，反映合格司机供给仍然偏紧。旺季前需关注长途线路与偏远区域的加价风险。", category: "司机与车队", impact: "关注", tags: ["司机", "薪酬", "旺季"], link: "https://www.freightwaves.com/news/index-of-driver-pay-product-of-two-companies-is-surging" },
+  { publishedAt: "06.26", publishedDay: "周五", source: "FreightWaves", score: 74, title: "美国港口附近绿色卡车走廊项目继续推进", summary: "零排放卡车走廊正在连接主要港口与跨境节点，未来可能影响港区短驳设备、车队准入和相关附加费用。", category: "新能源", impact: "利好", tags: ["港口", "新能源", "短驳"], link: "https://www.freightwaves.com/news/port-of-long-beach-trucker-launch-zero-emission-corridor-to-mexico" },
 ];
 
 const competitors = [

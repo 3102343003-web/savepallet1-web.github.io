@@ -36,6 +36,7 @@ test("starter preview dependencies and markers are removed", async () => {
   ]);
   assert.match(page, /卡卡省/);
   assert.match(layout, /lang="zh-CN"/);
+  assert.doesNotMatch(page, /link:\s*"https:\/\/www\.freightwaves\.com\/news\/category\//);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });
