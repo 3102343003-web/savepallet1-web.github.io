@@ -111,7 +111,7 @@ export default function Home() {
         <header className="topbar">
           <div><div className="eyebrow">MONDAY · 2026.07.20</div><h1>美国卡车运输情报</h1></div>
           <label className="search-box"><span>⌕</span><input aria-label="搜索资讯" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索公司、政策、线路或关键词" /><kbd>⌘ K</kbd></label>
-          <div className="topbar-actions"><button className="icon-button" aria-label="邮件通知">✉</button><div className="update-pill"><i />已更新 <strong>09:31</strong></div></div>
+          <div className="topbar-actions"><button className="icon-button" aria-label="邮件通知">✉</button><div className="update-pill"><i />已更新 <strong>10:01</strong></div></div>
         </header>
 
         <div className="workspace">
@@ -138,8 +138,8 @@ export default function Home() {
 
           <aside className="right-rail" id="competitors">
             <section className="rail-card competitor-card"><div className="rail-heading"><div><span className="live-dot" />竞对动态监控</div><button aria-label="更多竞对">•••</button></div><p className="rail-subtitle">2 家 A 级竞对 · 监控范围近 30 天</p><div className="competitor-list">{competitors.map((company) => <article key={company.name}><div className="company-head"><span className="company-avatar" style={{ background: company.color }}>{company.initials}</span><div><strong>{company.name}</strong><span>{company.level}重点监控</span></div><a href={company.link} target="_blank" rel="noreferrer">官网 ↗</a></div><div className="account-line"><span>微信公众号</span><strong>{company.wechatName}</strong></div><h3 className="monitor-status">{company.update}</h3><p>{company.insight}</p><div className="channel-row">{company.channels.map((channel) => channel.href ? <a href={channel.href} target="_blank" rel="noreferrer" title={`打开${company.name}${channel.label}主页`} key={channel.label}>{channel.label} ↗</a> : <span className="unavailable" title="入口待补充" key={channel.label}>{channel.label} · 待补</span>)}</div></article>)}</div><button className="outline-button">查看全部竞对动态 <span>→</span></button></section>
-            <section className="rail-card sales-card"><div className="rail-heading"><div>今日销售提示</div><span>AI</span></div><ol><li><b>01</b><div><strong>用经营数据解释市场转暖</strong><p>J.B. Hunt量价齐升，可用于说明旺季运价和采购成本变化。</p></div></li><li><b>02</b><div><strong>提前复核司机CDL资质</strong><p>法案可能收紧非本地CDL，合规运力价值将进一步提升。</p></div></li><li><b>03</b><div><strong>关注固定线路新能源方案</strong><p>芝加哥电动重卡测试可作为ESG客户的趋势沟通素材。</p></div></li></ol></section>
-            <section className="rail-card source-card"><div className="rail-heading"><div>数据与版权说明</div></div><p>受版权限制的来源仅展示中文摘要与原文链接，不转载全文或图片。</p><div><span>主要来源</span><strong>FreightWaves</strong></div><div><span>抓取窗口</span><strong>近 30 天</strong></div><div><span>历史保留</span><strong>365 天</strong></div><div><span>下次更新</span><strong>周二 09:00</strong></div></section>
+            <section className="rail-card sales-card"><div className="rail-heading"><div>今日销售提示</div><span>AI</span></div><ol><li><b>01</b><div><strong>不要把单周回调解释为全面降价</strong><p>现货价格虽短期回落，但三类车型同比仍高约42%至49%。</p></div></li><li><b>02</b><div><strong>缩短旺季线路报价有效期</strong><p>J.B. Hunt判断合同运价仍有上调空间，应尽早锁定可靠运力。</p></div></li><li><b>03</b><div><strong>重点核查异常低价运力</strong><p>平均运营成本创纪录，需同步确认保险、车况与履约记录。</p></div></li></ol></section>
+            <section className="rail-card source-card"><div className="rail-heading"><div>数据与版权说明</div></div><p>受版权限制的来源仅展示中文摘要与原文链接，不转载全文或图片。</p><div><span>主要来源</span><strong>FreightWaves、FleetOwner、TLI</strong></div><div><span>抓取窗口</span><strong>近 30 天</strong></div><div><span>历史保留</span><strong>365 天</strong></div><div><span>下次更新</span><strong>周二 09:00</strong></div></section>
           </aside>
         </div>
       </section>
