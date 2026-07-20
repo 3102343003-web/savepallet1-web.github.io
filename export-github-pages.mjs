@@ -1,4 +1,7 @@
 import worker from "./dist/server/index.js";
+import { readFile } from "node:fs/promises";
+
+const css = await readFile(new URL("./app/globals.css", import.meta.url), "utf8");
 
 const response = await worker.fetch(
   new Request("http://localhost/"),
@@ -11,7 +14,7 @@ html = html
   .replace(/<link rel="modulepreload"[^>]*>/g, "")
   .replace(/<script[^>]*>[\s\S]*?<\/script>/g, "")
   .replace(/<\/html>[\s\S]*$/, "</html>")
-  .replace(/<link rel="stylesheet"[^>]*>/, '<link rel="stylesheet" href="./app/globals.css">');
+  .replace(/<link rel="stylesheet"[^>]*>/, `<style>${css}</style>`);
 
 const interactions = `<script>
 (() => {

@@ -35,6 +35,12 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /https:\/\/v\.douyin\.com\/xEe-XTIB5VA/);
   assert.match(html, /小红书(?:<!-- -->)? ↗/);
   assert.match(html, /公众号(?:<!-- -->)? · 待补/);
+  assert.match(html, /MONDAY · 2026\.07\.20/);
+  assert.match(html, /J\.B\. Hunt二季度业绩超预期/);
+  assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/j-b-hunts-shares-up-9-on-q2-earnings-beat/);
+  assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/ooida-urges-house-to-vote-on-dalilahs-law-after-deadly-pennsylvania-crash/);
+  assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/tesla-paper-transport-partner-on-electric-semi-evaluation-in-chicago/);
+  assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/autonomous-truck-generalization/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
@@ -54,9 +60,12 @@ test("starter preview dependencies and markers are removed", async () => {
 
 test("GitHub Pages export is self-contained", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
-  assert.match(html, /href="\.\/app\/globals\.css"/);
+  assert.match(html, /<style>[\s\S]*\.app-shell/);
   assert.match(html, /data-category="市场运价"/);
   assert.match(html, /data-filter="市场运价"/);
   assert.match(html, /topicButtons/);
+  assert.match(html, /MONDAY · 2026\.07\.20/);
+  assert.match(html, /j-b-hunts-shares-up-9-on-q2-earnings-beat/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
+  assert.doesNotMatch(html, /href="\.\/app\/globals\.css"/);
 });
