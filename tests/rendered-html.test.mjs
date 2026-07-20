@@ -23,7 +23,7 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /竞对动态监控/);
   assert.match(html, /FreightWaves/);
   assert.match(html, /原文发布/);
-  assert.match(html, /仅近 30 天/);
+  assert.match(html, /class="range-chip">仅近/);
   assert.match(html, /省多多北美卡车平台/);
   assert.match(html, /货马达美国卡车运输平台/);
   assert.match(html, /data-category="市场运价"/);
@@ -35,7 +35,7 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /https:\/\/v\.douyin\.com\/xEe-XTIB5VA/);
   assert.match(html, /小红书(?:<!-- -->)? ↗/);
   assert.match(html, /公众号(?:<!-- -->)? · 待补/);
-  assert.match(html, /MONDAY · 2026\.07\.20/);
+  assert.match(html, /data-news-edition/);
   assert.match(html, /J\.B\. Hunt二季度业绩超预期/);
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/j-b-hunts-shares-up-9-on-q2-earnings-beat/);
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/ooida-urges-house-to-vote-on-dalilahs-law-after-deadly-pennsylvania-crash/);
@@ -48,30 +48,36 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
-test("starter preview dependencies and markers are removed", async () => {
-  const [page, layout, packageJson] = await Promise.all([
+test("starter preview dependencies are removed and news uses a separate data file", async () => {
+  const [page, layout, packageJson, newsData] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
+    readFile(new URL("../public/data/news.json", import.meta.url), "utf8"),
   ]);
   assert.match(page, /卡卡省/);
   assert.match(layout, /lang="zh-CN"/);
   assert.match(page, /DATA_WINDOW_DAYS = 30/);
+  assert.match(page, /fetch\("\.\/data\/news\.json"/);
+  assert.match(newsData, /"schemaVersion": 1/);
+  assert.match(newsData, /"newsItems": \[/);
   assert.doesNotMatch(page, /link:\s*"https:\/\/www\.freightwaves\.com\/news\/category\//);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });
 
-test("GitHub Pages export is self-contained", async () => {
+test("GitHub Pages export loads the lightweight news data file", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, /<style>[\s\S]*\.app-shell/);
   assert.match(html, /data-category="市场运价"/);
   assert.match(html, /data-filter="市场运价"/);
   assert.match(html, /topicButtons/);
-  assert.match(html, /MONDAY · 2026\.07\.20/);
+  assert.match(html, /data-news-edition/);
   assert.match(html, /j-b-hunts-shares-up-9-on-q2-earnings-beat/);
   assert.match(html, /jb-hunt-q2-profits-rise-as-truckload-capacity-tightens/);
   assert.match(html, /truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
+  assert.match(html, /data\/news\.json/);
+  assert.match(html, /data-news-list/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
   assert.doesNotMatch(html, /href="\.\/app\/globals\.css"/);
 });
