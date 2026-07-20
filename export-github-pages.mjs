@@ -1,5 +1,5 @@
 import worker from "./dist/server/index.js";
-import { readFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 const css = await readFile(new URL("./app/globals.css", import.meta.url), "utf8");
 
@@ -55,4 +55,5 @@ const interactions = `<script>
 })();
 </script>`;
 
-process.stdout.write(html.replace("</body>", `${interactions}</body>`));
+await writeFile(new URL("./index.html", import.meta.url), html.replace("</body>", `${interactions}</body>`), "utf8");
+process.stdout.write("GitHub Pages index.html exported.\n");

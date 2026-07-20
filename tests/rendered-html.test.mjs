@@ -41,6 +41,10 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/ooida-urges-house-to-vote-on-dalilahs-law-after-deadly-pennsylvania-crash/);
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/tesla-paper-transport-partner-on-electric-semi-evaluation-in-chicago/);
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/autonomous-truck-generalization/);
+  assert.match(html, /https:\/\/www\.fleetowner\.com\/news\/news\/55391547\/jb-hunt-q2-profits-rise-as-truckload-capacity-tightens/);
+  assert.match(html, /https:\/\/www\.fleetowner\.com\/news\/news\/55391195\/atri-releases-2026-trucking-operational-cost-report-for-fleet-benchmarking/);
+  assert.match(html, /https:\/\/www\.fleetowner\.com\/news\/rates\/news\/55391186\/truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
+  assert.match(html, /https:\/\/shiptli\.com\/news\/why-truck-freight-rates-are-rising-july-2026/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
@@ -66,6 +70,8 @@ test("GitHub Pages export is self-contained", async () => {
   assert.match(html, /topicButtons/);
   assert.match(html, /MONDAY · 2026\.07\.20/);
   assert.match(html, /j-b-hunts-shares-up-9-on-q2-earnings-beat/);
+  assert.match(html, /jb-hunt-q2-profits-rise-as-truckload-capacity-tightens/);
+  assert.match(html, /truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
   assert.doesNotMatch(html, /href="\.\/app\/globals\.css"/);
 });
