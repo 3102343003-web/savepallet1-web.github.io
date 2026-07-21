@@ -121,7 +121,7 @@ void (async () => {
     if (element) element.textContent = value;
   };
   try {
-    const response = await fetch(new URL("data/news.json", document.baseURI), { cache: "no-store" });
+    const response = await fetch(new URL("public/data/news.json", document.baseURI), { cache: "no-store" });
     if (!response.ok) throw new Error("资讯数据读取失败：" + response.status);
     const data = await response.json();
     if (data.schemaVersion !== 1 || !Array.isArray(data.newsItems)) throw new Error("资讯数据格式不兼容");

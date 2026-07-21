@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-07-20",
-    "weekday": "MONDAY",
-    "issue": "004",
-    "updatedAt": "09:00",
+    "date": "2026-07-21",
+    "weekday": "TUESDAY",
+    "issue": "005",
+    "updatedAt": "07.21",
     "windowDays": 30,
-    "nextUpdate": "周二 09:00"
+    "nextUpdate": "周三 09:00"
   },
   "brief": {
-    "title": "合规与跨境政策信号叠加，运力筛选和线路报价都要更谨慎。",
-    "summary": "7月20日的新稿集中在非本地 CDL 争议、商用车执法和美加贸易政策。对美国卡派而言，短期不宜把政策新闻直接等同于运价变化，但应同步收紧司机资质、设备合规与跨境线路的报价有效期管理。",
+    "title": "近30天政策信号密集，运力准入与跨境线路需要持续复核。",
+    "summary": "近30天美国卡车资讯中，FMCSA政策议程、非本地 CDL 争议、ELD 数据接入和美墨司机签证变化最值得关注。它们未必立刻改变全市场运价，但会直接影响可用合规运力、经纪责任和跨境订单履约，报价应保留动态校验空间。",
     "marketTemperature": "偏热",
     "readingMinutes": 10
   },
@@ -134,6 +134,24 @@
         "流程自动化"
       ],
       "link": "https://www.freightwaves.com/news/uber-freight-cto-ai-in-freight"
+    },
+    {
+      "publishedDate": "2026-07-17",
+      "publishedAt": "07.17",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 91,
+      "title": "FMCSA统一议程披露未来一年监管重点",
+      "summary": "FreightWaves报道，交通部与FMCSA发布的统一监管议程列出了未来数月及一年的工作优先事项。对承运商、经纪和货主而言，后续规则推进将持续影响驾驶员、车辆及运营合规的审核要求。",
+      "industryView": "这类议程不是即时政策变化，却是提前识别合规成本和运力波动的信号。卡派平台应把重点规则列入月度跟踪，不等到执法或正式生效时才补材料；销售面对客户询问时，应明确报价基于当前合规条件，并为监管变化预留复核机制。",
+      "category": "法规合规",
+      "impact": "关注",
+      "tags": [
+        "FMCSA",
+        "统一议程",
+        "监管"
+      ],
+      "link": "https://www.freightwaves.com/news/unified-agenda-at-fmcsa-spells-out-ambitious-plans-for-coming-year"
     },
     {
       "publishedDate": "2026-07-17",
@@ -406,6 +424,24 @@
       "link": "https://www.freightwaves.com/news/3-of-todays-10-fmcsa-revoked-elds-had-already-been-pulled-once"
     },
     {
+      "publishedDate": "2026-07-08",
+      "publishedAt": "07.08",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 87,
+      "title": "墨西哥卡车司机短缺加剧，美墨跨境运力承压",
+      "summary": "国际道路运输联盟指出，墨西哥卡车行业的司机空缺问题仍在加剧。作为美国跨境供应链的重要一环，司机供给偏紧可能影响美墨线路的提货能力、预约稳定性和临时报价。",
+      "industryView": "美墨线路不能只按美国境内运力逻辑报价。平台应把司机与车辆的跨境资质、口岸预约和备用承运商作为基础条件；在旺季、边境拥堵或高时效订单中，优先锁定可验证的跨境运力，并向客户说明等待时间与临时加价风险。",
+      "category": "司机与车队",
+      "impact": "关注",
+      "tags": [
+        "美墨跨境",
+        "司机短缺",
+        "运力"
+      ],
+      "link": "https://www.freightwaves.com/news/mexicos-trucking-labor-crunch-intensifies-iru-warns"
+    },
+    {
       "publishedDate": "2026-07-07",
       "publishedAt": "07.07",
       "publishedDay": "周二",
@@ -442,6 +478,24 @@
       "link": "https://www.freightwaves.com/news/transportation-pricing-index-hovers-near-all-time-high-in-june"
     },
     {
+      "publishedDate": "2026-07-02",
+      "publishedAt": "07.02",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 90,
+      "title": "Highway在判例影响后要求所有承运商接入ELD",
+      "summary": "FreightWaves报道，Highway在相关经纪责任判例后推出新政策，要求所有承运商接入ELD。该变化反映出经纪端对承运商真实运营数据、司机工时与安全信息的核验要求正在提高。",
+      "industryView": "经纪平台的竞争已从“能否找到车”延伸到“能否证明车是合规可履约的”。卡派平台应优先沉淀可核验的司机、车辆与工时资料，并在客户侧说明筛选标准；对于没有基础数据的低价承运商，应避免进入高货值和高时效订单。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "ELD",
+        "经纪责任",
+        "承运商核验"
+      ],
+      "link": "https://www.freightwaves.com/news/highway-post-montgomery-requiring-eld-hookups-for-all-carriers"
+    },
+    {
       "publishedDate": "2026-06-30",
       "publishedAt": "06.30",
       "publishedDay": "周二",
@@ -476,6 +530,42 @@
         "短驳"
       ],
       "link": "https://www.freightwaves.com/news/port-of-long-beach-trucker-launch-zero-emission-corridor-to-mexico"
+    },
+    {
+      "publishedDate": "2026-06-23",
+      "publishedAt": "06.23",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 92,
+      "title": "美方扩大沿岸运输执法，墨西哥卡车司机签证受影响",
+      "summary": "FreightWaves援引墨西哥行业人士称，自2025年4月以来约2万名墨西哥卡车司机失去美国工作签证，执法重点与沿岸运输规则有关。该事件可能收缩部分美墨跨境线路的合规司机供给。",
+      "industryView": "跨境司机签证与沿岸运输合规会直接影响可接单运力，且替代并非一夜可得。对美墨卡派订单，应把司机身份和跨境资格作为下单前必核项；报价中应为口岸等待、换司机或改派车队留出时间与价格缓冲。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "美墨跨境",
+        "司机签证",
+        "沿岸运输"
+      ],
+      "link": "https://www.freightwaves.com/news/us-revokes-20000-visas-for-mexican-truckers-as-cabotage-crackdown-expands"
+    },
+    {
+      "publishedDate": "2026-06-22",
+      "publishedAt": "06.22",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 84,
+      "title": "FMCSA取消CDL交通违法自我申报要求",
+      "summary": "FreightWaves报道，新的联邦法律取消了商业驾照持有人向所属州自行申报道路交通违法定罪的要求。信息流转机制改变后，车队和平台不能再仅依赖司机自行披露来完成风险判断。",
+      "industryView": "申报要求取消不代表风险减少，而是更需要依赖可靠的数据核验和定期复审。卡派平台应将驾驶记录、资质状态和承运商合规文件纳入标准化准入流程；对长期合作车队也要保留周期性复核，避免资料过期后仍被默认有效。",
+      "category": "法规合规",
+      "impact": "关注",
+      "tags": [
+        "FMCSA",
+        "CDL",
+        "驾驶记录"
+      ],
+      "link": "https://www.freightwaves.com/news/fmcsa-eliminates-cdl-violation-self-reporting-across-us"
     }
   ]
 }
