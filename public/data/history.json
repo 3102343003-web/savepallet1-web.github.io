@@ -4,6 +4,78 @@
   "updatedAt": "2026-07-20",
   "newsItems": [
     {
+      "publishedDate": "2026-07-20",
+      "publishedAt": "07.20",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "非本地 CDL 争议的诉讼文件已提交，下一轮法律博弈临近",
+      "summary": "FreightWaves报道，围绕非本地 CDL 的规则争议，相关各方已提交法律文件，案件即将进入下一阶段。该议题直接关联跨州运输中驾驶员资格审核与合规运力的可用性，结果尚未落定。",
+      "industryView": "这不是立即改变运价的单一事件，却会放大合规司机供给的不确定性。卡派平台应把非本地 CDL、驾驶记录与承运商准入作为持续校验项；面对紧张线路，报价时应预留替代运力和时效缓冲，避免把低价但资质不清的车源推给客户。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "非本地CDL",
+        "驾驶员资质",
+        "承运商准入"
+      ],
+      "link": "https://www.freightwaves.com/news/briefs-in-as-sides-gets-read-to-rumble-over-non-domiciled-cdls"
+    },
+    {
+      "publishedDate": "2026-07-20",
+      "publishedAt": "07.20",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 93,
+      "title": "无 CDL、酒驾与停运命令：商用车执法持续升级",
+      "summary": "FreightWaves汇总近期美国商用车执法案例，重点涉及无证驾驶、酒驾、危险设备状况及停运命令。执法机构正在加强路检，单车或单名司机的合规缺陷可能迅速演变为停运、延误与货损风险。",
+      "industryView": "对卡派平台和货主而言，风险不在于新闻本身，而在于临时派车的准入盲区。报价前应核对 CDL、USDOT、保险、设备维护和停运记录；对高时效或高货值订单，优先选择资料完整、可追溯的承运商，而非只按最低价成交。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "商用车执法",
+        "停运",
+        "路检"
+      ],
+      "link": "https://www.freightwaves.com/news/no-cdl-dui-and-out-of-service-orders-commercial-vehicle-enforcement-ramps-up"
+    },
+    {
+      "publishedDate": "2026-07-20",
+      "publishedAt": "07.20",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 88,
+      "title": "美国对加拿大进口商品加征50%关税，贸易摩擦升级",
+      "summary": "FreightWaves报道，美国宣布对约200亿美元加拿大进口商品加征50%关税。措施直接针对进口贸易，后续可能影响美加跨境货量结构、清关节奏和部分制造业、零售业货源的运输需求。",
+      "industryView": "关税不会自动推高所有美国卡派线路，但跨境客户的货量与报价节奏可能先出现变化。平台应将美加线路单列观察，缩短报价有效期，并向客户确认货物品类、清关责任和可能新增的时间成本，避免把政策不确定性留在履约环节。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": [
+        "美加跨境",
+        "关税",
+        "清关"
+      ],
+      "link": "https://www.freightwaves.com/news/trump-hits-canadian-imports-with-new-50-tariffs-escalating-trade-fight"
+    },
+    {
+      "publishedDate": "2026-07-20",
+      "publishedAt": "07.20",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 82,
+      "title": "Uber Freight CTO：货运 AI 应先解决业务基本功",
+      "summary": "Uber Freight技术负责人表示，大多数货运 AI 概念验证无法真正进入生产环境；其团队通过自动化文档处理，将相关工作量降低超过一半。重点不在展示模型能力，而在把流程、数据和人工审核接入实际运营。",
+      "industryView": "这对卡派平台的启发是，AI 更适合先用于资料归集、订单信息校验和异常提醒，而不是直接替代报价与承运商决策。先把高频、规则清晰的环节做准，才能在不增加大量算力的前提下提高销售与调度效率。",
+      "category": "公司动态",
+      "impact": "利好",
+      "tags": [
+        "Uber Freight",
+        "货运AI",
+        "流程自动化"
+      ],
+      "link": "https://www.freightwaves.com/news/uber-freight-cto-ai-in-freight"
+    },
+    {
       "publishedDate": "2026-07-17",
       "publishedAt": "07.17",
       "publishedDay": "周五",
