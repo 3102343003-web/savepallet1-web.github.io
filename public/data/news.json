@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-07-21",
-    "weekday": "TUESDAY",
-    "issue": "005",
-    "updatedAt": "07.21",
+    "date": "2026-07-22",
+    "weekday": "WEDNESDAY",
+    "issue": "006",
+    "updatedAt": "07.22",
     "windowDays": 30,
-    "nextUpdate": "周三 09:00"
+    "nextUpdate": "周四 09:00"
   },
   "brief": {
-    "title": "近30天政策信号密集，运力准入与跨境线路需要持续复核。",
-    "summary": "近30天美国卡车资讯中，FMCSA政策议程、非本地 CDL 争议、ELD 数据接入和美墨司机签证变化最值得关注。它们未必立刻改变全市场运价，但会直接影响可用合规运力、经纪责任和跨境订单履约，报价应保留动态校验空间。",
+    "title": "近30天核心情报无新增高相关稿件，维持合规与跨境风险优先级。",
+    "summary": "截至7月22日，FreightWaves卡车分类未出现新的高相关稿件。近30天最影响美国卡派履约的仍是FMCSA政策议程、非本地 CDL 争议、ELD 数据接入和美墨司机签证变化；平台应继续把运力准入与跨境线路的动态复核放在报价前端。",
     "marketTemperature": "偏热",
     "readingMinutes": 10
   },
