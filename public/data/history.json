@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-07-22",
+  "updatedAt": "2026-07-23",
   "newsItems": [
+    {
+      "publishedDate": "2026-07-22",
+      "publishedAt": "07.22",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 95,
+      "title": "基准柴油价格大幅上涨，燃油附加费成本压力加大",
+      "summary": "FreightWaves报道，用于多数燃油附加费计算的基准柴油价格出现战争开始以来第二大的单次上涨。柴油成本变化会先传导至燃油附加费，再影响长途、空驶比例高及对油价敏感线路的实际报价。",
+      "industryView": "卡派平台不应等到承运商临时加价后才处理燃油问题。报价应明确燃油附加费计算口径与生效时间，并对高油耗线路缩短有效期；货主比价时也应比较总价结构，而不是只比较不含燃油波动的基础运价。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": [
+        "柴油",
+        "燃油附加费",
+        "报价"
+      ],
+      "link": "https://www.freightwaves.com/news/big-jump-in-benchmark-diesel-price-is-2nd-largest-since-war-began"
+    },
+    {
+      "publishedDate": "2026-07-22",
+      "publishedAt": "07.22",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 92,
+      "title": "Knight-Swift称整车市场基本面在二季度快速改善",
+      "summary": "Knight-Swift在二季度业绩信息中表示，整车市场基本面出现显著加速。头部承运商对市场的判断表明，运力与运价环境的改善并非仅限于个别现货周度波动。",
+      "industryView": "头部车队的基本面判断值得作为报价边界信号，而不是机械当成全面涨价依据。平台应把紧张线路、时效要求高的订单优先分配给稳定运力，并在销售沟通中区分全国市场判断与具体线路、车型的真实可成交价格。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": [
+        "Knight-Swift",
+        "整车",
+        "运力"
+      ],
+      "link": "https://www.freightwaves.com/news/knight-swifts-q2-sees-rapid-progression-in-tl-fundamentals"
+    },
+    {
+      "publishedDate": "2026-07-22",
+      "publishedAt": "07.22",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 90,
+      "title": "多州商用车安全突击检查发现广泛违规，停运风险上升",
+      "summary": "FreightWaves报道，马里兰、佛罗里达、肯塔基和伊利诺伊等地的商用车执法检查发现不安全车辆、不合格司机及危险驾驶行为，监管重点持续指向车辆安全和驾驶员资格。",
+      "industryView": "执法加强会让原本资料不完整的低价运力更容易在途失效。卡派平台应把 CDL、ELD、保险、车辆状态和历史停运记录作为派车前的标准核验项；对高时效订单，建议优先选择资料可追溯的承运商并准备备选运力。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "路检",
+        "停运",
+        "车辆合规"
+      ],
+      "link": "https://www.freightwaves.com/news/trucking-safety-blitzes-uncover-broad-violations-in-maryland-florida-kentucky-and-illinois"
+    },
     {
       "publishedDate": "2026-07-20",
       "publishedAt": "07.20",
