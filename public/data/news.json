@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-07-23",
-    "weekday": "THURSDAY",
-    "issue": "007",
-    "updatedAt": "07.23",
+    "date": "2026-07-24",
+    "weekday": "FRIDAY",
+    "issue": "008",
+    "updatedAt": "07.24",
     "windowDays": 30,
-    "nextUpdate": "周五 09:00"
+    "nextUpdate": "周一 10:00"
   },
   "brief": {
-    "title": "柴油附加费、整车基本面与停运执法同时抬头，报价需动态校验。",
-    "summary": "截至7月23日，柴油基准价上跳、头部整车承运商对市场基本面的积极判断，以及多州商用车停运执法，构成当前最直接的卡派信号。平台应把燃油附加费、可用运力和司机车辆合规同时放进报价与派车前的复核流程。",
-    "marketTemperature": "偏热",
+    "title": "经纪责任与提货核验风险同时升级，低价运力不能绕过身份审查。",
+    "summary": "截至7月24日，C.H. Robinson约6.04亿美元裁决把经纪责任推至高位，提货放行与商用车碰瓷风险也同步升温。卡派平台和货主应把承运商选择依据、到仓身份核验、事故证据及保险响应纳入同一套留痕流程。",
+    "marketTemperature": "风险偏高",
     "readingMinutes": 10
   },
   "topStories": [
     {
       "rank": "01",
-      "category": "市场运价",
-      "title": "柴油基准价上跳，燃油附加费进入复核窗口",
-      "summary": "用于多数燃油附加费计算的基准柴油价格出现战争开始以来第二大的单次上涨，报价成本端短期承压。",
-      "signal": "报价提醒",
-      "signalText": "确认燃油附加费机制并缩短高油耗线路报价有效期",
-      "tone": "blue"
+      "category": "经纪责任",
+      "title": "C.H. Robinson遭6.04亿美元裁决，经纪责任边界承压",
+      "summary": "涉事承运商拥有FMCSA满意评级，但陪审团仍认定经纪商承担23%责任；公司已表示将上诉。",
+      "signal": "责任预警",
+      "signalText": "评级之外保留承运商筛选、派车与异常处置证据",
+      "tone": "violet"
     },
     {
       "rank": "02",
-      "category": "市场运价",
-      "title": "Knight-Swift称整车市场基本面在二季度加速改善",
-      "summary": "头部承运商观察到整车市场基本面明显加速，运价与运力环境的改善信号延续。",
-      "signal": "运力策略",
-      "signalText": "紧张线路优先锁定可验证运力，避免过度承诺低价",
+      "category": "经纪责任",
+      "title": "提货车辆与核准信息不符，货主放货可能扩大责任",
+      "summary": "Montgomery判决后，码头放货环节将被审查；承运商、DOT/MC号、司机或设备不匹配时应暂停放货。",
+      "signal": "提货核验",
+      "signalText": "仓库逐项核对承运商、DOT/MC号、司机和设备",
       "tone": "orange"
     },
     {
       "rank": "03",
-      "category": "法规合规",
-      "title": "多州商用车安全执法持续扩大，停运单增加",
-      "summary": "近期检查在多个州发现不安全车辆、资质不合格司机及危险驾驶行为，并产生多起停运处置。",
-      "signal": "派车提醒",
-      "signalText": "派车前复核 CDL、ELD、保险和车辆状态",
-      "tone": "violet"
+      "category": "承运商风险",
+      "title": "商用车碰瓷法案拟设最高20年联邦刑期",
+      "summary": "参议院提案拟把故意制造商用车事故及组织、协助行为列为联邦犯罪，以压降虚假索赔和保险成本。",
+      "signal": "保险提醒",
+      "signalText": "事故材料及时留存并核查异常索赔与承运商保险",
+      "tone": "blue"
     }
   ],
   "salesTips": [
     {
-      "title": "先确认燃油附加费再给客户锁价",
-      "summary": "柴油基准价上跳时，固定总价与燃油浮动条款必须分开沟通。"
+      "title": "FMCSA满意评级不足以单独免责",
+      "summary": "报价和派车前同步核验安全、保险、司机车辆与控制边界，并保存选择依据。"
     },
     {
-      "title": "紧张线路优先锁定可验证运力",
-      "summary": "头部整车市场信号改善，不宜用低价假设覆盖全周履约风险。"
+      "title": "到仓信息不符先暂停放货",
+      "summary": "承运商、DOT/MC号、司机或设备任一不符，都应回拨确认并重新审批。"
     },
     {
-      "title": "把停运记录列入派车前必核项",
-      "summary": "多州路检加严时，资质或设备缺陷会直接导致货物延误。"
+      "title": "把事故证据能力纳入运力评分",
+      "summary": "小车队保险和理赔能力会影响赔付、诉讼风险与长期可用性。"
     }
   ],
   "sources": [
@@ -63,6 +63,48 @@
     "TLI"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-07-24",
+      "publishedAt": "07.24",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "C.H. Robinson遭逾6亿美元核爆式裁决，经纪责任风险骤增",
+      "summary": "FreightWaves报道，达拉斯陪审团就2021年致命事故作出约6.04亿美元裁决，并认定经纪商C.H. Robinson承担23%责任。涉事承运商事发前后均获FMCSA“满意”评级，但该抗辩未获陪审团采纳；公司表示将上诉。",
+      "industryView": "对卡派比价平台而言，FMCSA评级只能是准入起点，不能替代对承运商、司机、车辆及实际控制边界的持续核验。平台应保存询价、筛选、派车、异常沟通与替换运力记录，并避免对承运商日常调度形成可能被认定为控制关系的指令痕迹。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": ["经纪责任", "核爆式裁决", "承运商筛选"],
+      "link": "https://www.freightwaves.com/news/c-h-robinson-hit-with-huge-nuclear-verdict-in-a-post-montgomery-world"
+    },
+    {
+      "publishedDate": "2026-07-23",
+      "publishedAt": "07.23",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "错误车辆到仓放货，货主也可能面临运输责任",
+      "summary": "FreightWaves刊登的行业评论指出，Montgomery判决后，事故调查可能沿运输决策链追溯至货主提货环节。若到场承运商、DOT/MC号、司机或设备与核准指派不一致，货主明知存在异常仍放货，可能因自身决定受到过失责任审查。",
+      "industryView": "卡派平台应把线上承运商审核延伸到线下提货放行：向仓库发送可核验的承运商、DOT/MC号、司机及车辆信息，异常时暂停放货并用可信联系方式回拨确认。对双重经纪、临时换车和保险主体不一致，必须留痕并重新审批。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": ["货主责任", "到仓核验", "DOT/MC号"],
+      "link": "https://www.freightwaves.com/news/the-wrong-truck-at-the-dock-can-create-shipper-liability"
+    },
+    {
+      "publishedDate": "2026-07-23",
+      "publishedAt": "07.23",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 91,
+      "title": "商用车碰瓷法案拟设最高20年联邦刑期",
+      "summary": "美国参议员提出《分阶段事故欺诈预防法案》，拟将故意制造商用车碰撞及组织、协助此类骗局设为联邦犯罪，最高可判20年。支持者认为，虚假事故索赔正在推高小型车队的诉讼支出与保险费；法案仍处提案阶段。",
+      "industryView": "碰瓷事故虽不直接改变当日运价，却会通过保费、诉讼成本和小车队经营压力传导至可用运力与报价。卡派平台应要求承运商及时回传事故照片、行车记录和警方资料，识别异常索赔，并把保险有效性与理赔响应能力纳入比价权重。",
+      "category": "承运商风险",
+      "impact": "关注",
+      "tags": ["碰瓷事故", "保险成本", "承运商风险"],
+      "link": "https://www.freightwaves.com/news/staged-truck-crashes-could-bring-20-years-in-federal-prison-under-new-bill"
+    },
     {
       "publishedDate": "2026-07-22",
       "publishedAt": "07.22",

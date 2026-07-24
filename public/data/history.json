@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-07-23",
+  "updatedAt": "2026-07-24",
   "newsItems": [
+    {
+      "publishedDate": "2026-07-24",
+      "publishedAt": "07.24",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "C.H. Robinson遭逾6亿美元核爆式裁决，经纪责任风险骤增",
+      "summary": "FreightWaves报道，达拉斯陪审团就2021年致命事故作出约6.04亿美元裁决，并认定经纪商C.H. Robinson承担23%责任。涉事承运商事发前后均获FMCSA“满意”评级，但该抗辩未获陪审团采纳；公司表示将上诉。",
+      "industryView": "对卡派比价平台而言，FMCSA评级只能是准入起点，不能替代对承运商、司机、车辆及实际控制边界的持续核验。平台应保存询价、筛选、派车、异常沟通与替换运力记录，并避免对承运商日常调度形成可能被认定为控制关系的指令痕迹。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": [
+        "经纪责任",
+        "核爆式裁决",
+        "承运商筛选"
+      ],
+      "link": "https://www.freightwaves.com/news/c-h-robinson-hit-with-huge-nuclear-verdict-in-a-post-montgomery-world"
+    },
+    {
+      "publishedDate": "2026-07-23",
+      "publishedAt": "07.23",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "错误车辆到仓放货，货主也可能面临运输责任",
+      "summary": "FreightWaves刊登的行业评论指出，Montgomery判决后，事故调查可能沿运输决策链追溯至货主提货环节。若到场承运商、DOT/MC号、司机或设备与核准指派不一致，货主明知存在异常仍放货，可能因自身决定受到过失责任审查。",
+      "industryView": "卡派平台应把线上承运商审核延伸到线下提货放行：向仓库发送可核验的承运商、DOT/MC号、司机及车辆信息，异常时暂停放货并用可信联系方式回拨确认。对双重经纪、临时换车和保险主体不一致，必须留痕并重新审批。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": [
+        "货主责任",
+        "到仓核验",
+        "DOT/MC号"
+      ],
+      "link": "https://www.freightwaves.com/news/the-wrong-truck-at-the-dock-can-create-shipper-liability"
+    },
+    {
+      "publishedDate": "2026-07-23",
+      "publishedAt": "07.23",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 91,
+      "title": "商用车碰瓷法案拟设最高20年联邦刑期",
+      "summary": "美国参议员提出《分阶段事故欺诈预防法案》，拟将故意制造商用车碰撞及组织、协助此类骗局设为联邦犯罪，最高可判20年。支持者认为，虚假事故索赔正在推高小型车队的诉讼支出与保险费；法案仍处提案阶段。",
+      "industryView": "碰瓷事故虽不直接改变当日运价，却会通过保费、诉讼成本和小车队经营压力传导至可用运力与报价。卡派平台应要求承运商及时回传事故照片、行车记录和警方资料，识别异常索赔，并把保险有效性与理赔响应能力纳入比价权重。",
+      "category": "承运商风险",
+      "impact": "关注",
+      "tags": [
+        "碰瓷事故",
+        "保险成本",
+        "承运商风险"
+      ],
+      "link": "https://www.freightwaves.com/news/staged-truck-crashes-could-bring-20-years-in-federal-prison-under-new-bill"
+    },
     {
       "publishedDate": "2026-07-22",
       "publishedAt": "07.22",
