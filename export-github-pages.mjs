@@ -30,8 +30,9 @@ void (async () => {
     if (data.schemaVersion !== 1 || !Array.isArray(data.newsItems)) throw new Error("资讯数据格式不兼容");
     const windowDays = Number(data.edition.windowDays) || 30;
     const windowMs = windowDays * 24 * 60 * 60 * 1000;
+    const referenceMs = new Date(data.edition.date + "T23:59:59Z").getTime();
     const newsItems = data.newsItems.filter((item) => {
-      const age = Date.now() - new Date(item.publishedDate + "T23:59:59Z").getTime();
+      const age = referenceMs - new Date(item.publishedDate + "T23:59:59Z").getTime();
       return age >= 0 && age <= windowMs;
     });
     setText("[data-news-edition]", data.edition.weekday + " · " + data.edition.date.replaceAll("-", "."));

@@ -57,7 +57,8 @@ test("starter preview dependencies are removed and news uses a separate data fil
   ]);
   assert.match(page, /卡卡省/);
   assert.match(layout, /lang="zh-CN"/);
-  assert.match(page, /DATA_WINDOW_DAYS = 30/);
+  assert.match(page, /content\.edition\.date, content\.edition\.windowDays/);
+  assert.doesNotMatch(page, /Date\.now\(\) - new Date\(`\$\{publishedDate\}/);
   assert.match(page, /fetch\("\.\/data\/news\.json"/);
   assert.match(newsData, /"schemaVersion": 1/);
   assert.match(newsData, /"newsItems": \[/);
@@ -78,6 +79,7 @@ test("GitHub Pages export loads the lightweight news data file", async () => {
   assert.match(html, /truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
   assert.match(html, /data\/news\.json/);
   assert.match(html, /data-news-list/);
+  assert.match(html, /referenceMs - new Date\(item\.publishedDate/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
   assert.doesNotMatch(html, /href="\.\/app\/globals\.css"/);
 });

@@ -58,11 +58,11 @@ const competitors = [
   { name: "货马达", level: "A级", initials: "货", color: "#2563eb", wechatName: "货马达美国卡车运输平台", update: "近 30 天暂无可公开验证的公众号更新", insight: "账号主页链接待补充，暂不绑定未经核验的同名账号。", channels: [{ label: "公众号" }, { label: "官网", href: "https://www.hmd-truck.com" }, { label: "小红书" }, { label: "视频号" }, { label: "抖音" }] satisfies CompetitorChannel[], link: "https://www.hmd-truck.com" },
 ];
 
-const DATA_WINDOW_DAYS = 30;
-const DATA_WINDOW_MS = DATA_WINDOW_DAYS * 24 * 60 * 60 * 1000;
-const isWithinDataWindow = (publishedDate: string) => {
-  const age = Date.now() - new Date(`${publishedDate}T23:59:59Z`).getTime();
-  return age >= 0 && age <= DATA_WINDOW_MS;
+const isWithinDataWindow = (publishedDate: string, referenceDate: string, windowDays: number) => {
+  const publishedAt = new Date(`${publishedDate}T23:59:59Z`).getTime();
+  const referenceAt = new Date(`${referenceDate}T23:59:59Z`).getTime();
+  const age = referenceAt - publishedAt;
+  return age >= 0 && age <= windowDays * 24 * 60 * 60 * 1000;
 };
 
 const filters = ["全部", "市场运价", "法规合规", "公司动态", "司机与车队", "新能源"];
@@ -79,8 +79,8 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [bookmarked, setBookmarked] = useState<string[]>([]);
   const windowNews = useMemo(
-    () => content.newsItems.filter((item) => isWithinDataWindow(item.publishedDate)),
-    [content.newsItems],
+    () => content.newsItems.filter((item) => isWithinDataWindow(item.publishedDate, content.edition.date, content.edition.windowDays)),
+    [content.edition.date, content.edition.windowDays, content.newsItems],
   );
   const visibleNews = useMemo(() => {
     const keyword = query.trim().toLowerCase();
