@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-27",
   "newsItems": [
+    {
+      "publishedDate": "2026-07-26",
+      "publishedAt": "07.26",
+      "publishedDay": "周日",
+      "source": "FreightWaves",
+      "score": 92,
+      "title": "美国扩大涉墨西哥物流企业制裁，跨境交易筛查升级",
+      "summary": "美国财政部对50多名与墨西哥CJNG有关的个人和企业实施制裁，涵盖燃油、物流、安保及制造业；其中Transic Logistic被指参与液态芬太尼转运。措施冻结其在美资产，并禁止美国主体与被列名对象交易，跨境运输链面临更严格审查。",
+      "industryView": "卡派平台处理美墨线路时，不能只核验DOT/MC和保险，还应在询价、承运商准入及付款前筛查OFAC名单、实际控制人和关联企业。命中或名称相近时暂停成交并升级人工复核，保存筛查时间与结果，避免低价运力或分包链把平台卷入制裁交易。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "美墨跨境",
+        "OFAC制裁",
+        "交易筛查"
+      ],
+      "link": "https://www.freightwaves.com/news/borderlands-mexico-us-widens-mexican-cartel-crackdown-to-tequila-makers-baby-shoe-company"
+    },
+    {
+      "publishedDate": "2026-07-25",
+      "publishedAt": "07.25",
+      "publishedDay": "周六",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "运价仍处近17年高位，合规司机短缺压缩可用运力",
+      "summary": "ACT Research 6月For-Hire Trucking Index显示，运价指数虽环比回落9.5点至70.2，仍处近17年高位；运力指数升至55，但主要来自大型优质车队扩张。司机可用性仅34.1，非本地CDL限制、ELD与注册欺诈执法继续压缩合规司机供给。",
+      "industryView": "卡派平台应把整体运力指数改善与具体线路可用车源分开判断：高分承运商扩张不等于小车队全面回流。销售报价宜缩短有效期，对高时效线路提前锁定经核验运力，并将CDL、ELD和注册真实性纳入派车前复核，避免用低价覆盖合规稀缺。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": [
+        "运价",
+        "运力收紧",
+        "CDL与ELD"
+      ],
+      "link": "https://www.freightwaves.com/news/truck-capacity-shortage"
+    },
+    {
+      "publishedDate": "2026-07-25",
+      "publishedAt": "07.25",
+      "publishedDay": "周六",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "美国托运提前期持续攀升，当前均值达3.74天",
+      "summary": "FreightWaves SONAR显示，美国托运提前期升至3.74天，比2022至2025年同期运行均值3.37天高约11%，且已连续六年上移。趋势既反映货主提升预测和库存缓冲，也表明面对关税、地缘扰动及节假日运力风险，市场正更早安排提货。",
+      "industryView": "对卡派比价平台，提前期上升意味着客户不应等到装货前一两天才比价。可按线路紧张度给出建议下单窗口，把预计提货日至确认承运商的间隔纳入报价规则；对临时单提示更高现货溢价和拒载风险，同时利用提前量优化空驶与车辆定位。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": [
+        "托运提前期",
+        "提前锁车",
+        "运力规划"
+      ],
+      "link": "https://www.freightwaves.com/news/why-do-tender-lead-times-keep-climbing"
+    },
     {
       "publishedDate": "2026-07-24",
       "publishedAt": "07.24",

@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-07-24",
-    "weekday": "FRIDAY",
-    "issue": "008",
-    "updatedAt": "07.24",
+    "date": "2026-07-27",
+    "weekday": "MONDAY",
+    "issue": "009",
+    "updatedAt": "07.27",
     "windowDays": 30,
-    "nextUpdate": "周一 10:00"
+    "nextUpdate": "周二 10:00"
   },
   "brief": {
-    "title": "经纪责任与提货核验风险同时升级，低价运力不能绕过身份审查。",
-    "summary": "截至7月24日，C.H. Robinson约6.04亿美元裁决把经纪责任推至高位，提货放行与商用车碰瓷风险也同步升温。卡派平台和货主应把承运商选择依据、到仓身份核验、事故证据及保险响应纳入同一套留痕流程。",
-    "marketTemperature": "风险偏高",
+    "title": "运价仍处高位、合规运力偏紧，跨境交易筛查需要前置。",
+    "summary": "截至7月27日，ACT Research指标显示运价仍处近17年高位，司机供给受CDL与ELD执法约束；托运提前期也持续拉长。美墨跨境方面，美国扩大对涉物流企业的制裁，平台需同步强化锁车节奏与交易方筛查。",
+    "marketTemperature": "偏紧",
     "readingMinutes": 10
   },
   "topStories": [
     {
       "rank": "01",
-      "category": "经纪责任",
-      "title": "C.H. Robinson遭6.04亿美元裁决，经纪责任边界承压",
-      "summary": "涉事承运商拥有FMCSA满意评级，但陪审团仍认定经纪商承担23%责任；公司已表示将上诉。",
-      "signal": "责任预警",
-      "signalText": "评级之外保留承运商筛选、派车与异常处置证据",
-      "tone": "violet"
-    },
-    {
-      "rank": "02",
-      "category": "经纪责任",
-      "title": "提货车辆与核准信息不符，货主放货可能扩大责任",
-      "summary": "Montgomery判决后，码头放货环节将被审查；承运商、DOT/MC号、司机或设备不匹配时应暂停放货。",
-      "signal": "提货核验",
-      "signalText": "仓库逐项核对承运商、DOT/MC号、司机和设备",
+      "category": "市场运价",
+      "title": "运价保持近17年高位，合规司机仍是运力瓶颈",
+      "summary": "6月运价指数为70.2，运力扩张主要集中于大型优质车队；司机可用性指数仅34.1。",
+      "signal": "报价策略",
+      "signalText": "紧张线路缩短报价有效期并提前锁定合规运力",
       "tone": "orange"
     },
     {
-      "rank": "03",
-      "category": "承运商风险",
-      "title": "商用车碰瓷法案拟设最高20年联邦刑期",
-      "summary": "参议院提案拟把故意制造商用车事故及组织、协助行为列为联邦犯罪，以压降虚假索赔和保险成本。",
-      "signal": "保险提醒",
-      "signalText": "事故材料及时留存并核查异常索赔与承运商保险",
+      "rank": "02",
+      "category": "运力策略",
+      "title": "托运提前期升至3.74天，较近年均值高约11%",
+      "summary": "货主正更早安排提货，以缓冲关税、地缘扰动、节假日与临时找车风险。",
+      "signal": "提前锁车",
+      "signalText": "按线路紧张度给客户明确建议下单窗口",
       "tone": "blue"
+    },
+    {
+      "rank": "03",
+      "category": "美墨跨境",
+      "title": "美国制裁网络涉及墨西哥物流企业，交易筛查升级",
+      "summary": "美国冻结涉CJNG网络在美资产并禁止美国主体交易，名单覆盖物流、燃油和制造企业。",
+      "signal": "名单筛查",
+      "signalText": "跨境询价、准入和付款前复核OFAC及关联企业",
+      "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "FMCSA满意评级不足以单独免责",
-      "summary": "报价和派车前同步核验安全、保险、司机车辆与控制边界，并保存选择依据。"
+      "title": "运力指数回升不等于所有线路宽松",
+      "summary": "大型车队扩张与合规司机短缺并存，报价仍要按线路和车型核验。"
     },
     {
-      "title": "到仓信息不符先暂停放货",
-      "summary": "承运商、DOT/MC号、司机或设备任一不符，都应回拨确认并重新审批。"
+      "title": "把建议下单窗口写进报价沟通",
+      "summary": "提前期已升至3.74天，临时订单应明确现货溢价和拒载风险。"
     },
     {
-      "title": "把事故证据能力纳入运力评分",
-      "summary": "小车队保险和理赔能力会影响赔付、诉讼风险与长期可用性。"
+      "title": "美墨线路付款前再做一次名单筛查",
+      "summary": "核对OFAC、实际控制人与关联企业，命中或近似名称立即人工复核。"
     }
   ],
   "sources": [
@@ -63,6 +63,48 @@
     "TLI"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-07-26",
+      "publishedAt": "07.26",
+      "publishedDay": "周日",
+      "source": "FreightWaves",
+      "score": 92,
+      "title": "美国扩大涉墨西哥物流企业制裁，跨境交易筛查升级",
+      "summary": "美国财政部对50多名与墨西哥CJNG有关的个人和企业实施制裁，涵盖燃油、物流、安保及制造业；其中Transic Logistic被指参与液态芬太尼转运。措施冻结其在美资产，并禁止美国主体与被列名对象交易，跨境运输链面临更严格审查。",
+      "industryView": "卡派平台处理美墨线路时，不能只核验DOT/MC和保险，还应在询价、承运商准入及付款前筛查OFAC名单、实际控制人和关联企业。命中或名称相近时暂停成交并升级人工复核，保存筛查时间与结果，避免低价运力或分包链把平台卷入制裁交易。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["美墨跨境", "OFAC制裁", "交易筛查"],
+      "link": "https://www.freightwaves.com/news/borderlands-mexico-us-widens-mexican-cartel-crackdown-to-tequila-makers-baby-shoe-company"
+    },
+    {
+      "publishedDate": "2026-07-25",
+      "publishedAt": "07.25",
+      "publishedDay": "周六",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "运价仍处近17年高位，合规司机短缺压缩可用运力",
+      "summary": "ACT Research 6月For-Hire Trucking Index显示，运价指数虽环比回落9.5点至70.2，仍处近17年高位；运力指数升至55，但主要来自大型优质车队扩张。司机可用性仅34.1，非本地CDL限制、ELD与注册欺诈执法继续压缩合规司机供给。",
+      "industryView": "卡派平台应把整体运力指数改善与具体线路可用车源分开判断：高分承运商扩张不等于小车队全面回流。销售报价宜缩短有效期，对高时效线路提前锁定经核验运力，并将CDL、ELD和注册真实性纳入派车前复核，避免用低价覆盖合规稀缺。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": ["运价", "运力收紧", "CDL与ELD"],
+      "link": "https://www.freightwaves.com/news/truck-capacity-shortage"
+    },
+    {
+      "publishedDate": "2026-07-25",
+      "publishedAt": "07.25",
+      "publishedDay": "周六",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "美国托运提前期持续攀升，当前均值达3.74天",
+      "summary": "FreightWaves SONAR显示，美国托运提前期升至3.74天，比2022至2025年同期运行均值3.37天高约11%，且已连续六年上移。趋势既反映货主提升预测和库存缓冲，也表明面对关税、地缘扰动及节假日运力风险，市场正更早安排提货。",
+      "industryView": "对卡派比价平台，提前期上升意味着客户不应等到装货前一两天才比价。可按线路紧张度给出建议下单窗口，把预计提货日至确认承运商的间隔纳入报价规则；对临时单提示更高现货溢价和拒载风险，同时利用提前量优化空驶与车辆定位。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": ["托运提前期", "提前锁车", "运力规划"],
+      "link": "https://www.freightwaves.com/news/why-do-tender-lead-times-keep-climbing"
+    },
     {
       "publishedDate": "2026-07-24",
       "publishedAt": "07.24",
