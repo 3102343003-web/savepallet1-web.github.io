@@ -110,6 +110,20 @@
       "publishedAt": "07.24",
       "publishedDay": "周五",
       "source": "FreightWaves",
+      "score": 96,
+      "title": "Marten：冷藏整车运力收紧推动运价上涨",
+      "summary": "冷藏承运商Marten Transport称，监管清理不合规司机正收缩运力，使公司能改善货物选择并提高运价。其非专用整车车队平均车辆数同比减少8%，但每辆车收入增长9%，每载货英里收入上涨6%至2.81美元；经纪业务买入运力成本也明显高于既有合同售价。",
+      "industryView": "冷藏货运是食品、医药等高时效订单的关键运力信号。卡派平台应把冷藏线路与普通干货线路分开定价，缩短高温季和紧张线路的报价有效期，并持续核验司机与车队合规状态；合同价偏低时要提前提示采购运力成本倒挂和拒载风险。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": ["冷藏运输", "运力收紧", "运价"],
+      "link": "https://www.freightwaves.com/news/marten-transports-q2-reefer-market-on-the-rise"
+    },
+    {
+      "publishedDate": "2026-07-24",
+      "publishedAt": "07.24",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
       "score": 99,
       "title": "C.H. Robinson遭逾6亿美元核爆式裁决，经纪责任风险骤增",
       "summary": "FreightWaves报道，达拉斯陪审团就2021年致命事故作出约6.04亿美元裁决，并认定经纪商C.H. Robinson承担23%责任。涉事承运商事发前后均获FMCSA“满意”评级，但该抗辩未获陪审团采纳；公司表示将上诉。",
@@ -296,6 +310,34 @@
         "运力"
       ],
       "link": "https://www.fleetowner.com/news/news/55391547/jb-hunt-q2-profits-rise-as-truckload-capacity-tightens"
+    },
+    {
+      "publishedDate": "2026-07-16",
+      "publishedAt": "07.16",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 97,
+      "title": "DHS与DOT联合调查75所疑似欺诈CDL培训学校",
+      "summary": "美国国土安全部与交通部宣布联合调查约75所涉嫌欺诈的CDL培训学校。FMCSA已识别相关机构，调查重点包括培训记录、资质真实性及是否向不合格人员提供取证路径；行动显示监管正从删除培训机构名单进一步转向跨部门查处。",
+      "industryView": "学校被调查不等于其毕业司机立即失去执照，但会提高司机资质复核和承运商用工风险。卡派平台应要求车队核验CDL、ELDT培训来源和驾驶记录，对来自被标记学校或资料异常的司机升级人工审查，并预留替换司机与延误方案。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["CDL培训", "FMCSA", "资质欺诈"],
+      "link": "https://www.freightwaves.com/news/dhs-dot-partner-to-investigate-75-cdl-training-schools-suspected-of-fraud"
+    },
+    {
+      "publishedDate": "2026-07-16",
+      "publishedAt": "07.16",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 92,
+      "title": "ArcBest裁员并关闭10个LTL站点",
+      "summary": "ArcBest宣布重组，拟裁减约2%员工，并关闭10个小型市场的ABF Freight LTL站点，约占其网络门数1%，相关业务将并入邻近服务中心且需工会批准。公司同时整合MoLo、Panther等品牌，预计形成约4000万美元年化成本节约。",
+      "industryView": "站点数量减少不大，但偏远市场的提货半径、中转路径和附加费可能先变化。卡派平台应复核受影响LTL线路的服务覆盖、截单时间与备用承运商；涉及ArcBest体系的在途和新报价，需确认实际承运品牌、站点归属及异常转运责任。",
+      "category": "承运商风险",
+      "impact": "风险",
+      "tags": ["ArcBest", "LTL站点", "网络收缩"],
+      "link": "https://www.freightwaves.com/news/arcbest-announces-layoffs-closing-10-ltl-terminals"
     },
     {
       "publishedDate": "2026-07-16",
@@ -572,6 +614,34 @@
       "publishedAt": "07.07",
       "publishedDay": "周二",
       "source": "FreightWaves",
+      "score": 91,
+      "title": "两家公司申请最长五年的HOS工时规则豁免",
+      "summary": "两家公司分别向FMCSA申请最长五年的工时规则豁免，希望在特定业务中放宽HOS限制；现有同类豁免通常适用于特殊运输或免除30分钟休息要求，申请意见期截至7月30日。报道强调，豁免不同于短期豁免令，批准后可能形成更长期的竞争与安全影响。",
+      "industryView": "申请本身尚未改变全行业工时规则，平台不能提前按放宽后的工时承诺时效。涉及特殊运输或灾害响应订单，应逐车核验承运商是否真实获得且仍在有效期内的豁免，保存适用范围与证明文件；普通车队仍按现行HOS和ELD要求排班。",
+      "category": "法规合规",
+      "impact": "关注",
+      "tags": ["HOS", "FMCSA豁免", "司机工时"],
+      "link": "https://www.freightwaves.com/news/two-companies-on-same-day-ask-for-relief-from-hos-rules"
+    },
+    {
+      "publishedDate": "2026-07-07",
+      "publishedAt": "07.07",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 90,
+      "title": "AscendTMS接入SearchCarriers强化承运商反欺诈核验",
+      "summary": "AscendTMS把SearchCarriers的持续更新数据库接入免费CVQ承运商核验平台，使经纪商和货主可在TMS内查询承运商与经纪商信息、识别双重经纪、身份冒用和不安全承运风险。该功能既可作为主要核验工具，也可与Highway、RMIS等平台交叉使用。",
+      "industryView": "工具整合提高筛查效率，但自动返回通过不等于平台已尽到全部审慎义务。卡派应把实时资质、保险、联系方式、ELD和历史行为交叉验证，并记录查询时间、结果与人工处置；新注册、长期沉默后复活或临时更换收款账户的承运商仍应升级复核。",
+      "category": "经纪责任",
+      "impact": "利好",
+      "tags": ["承运商核验", "货运欺诈", "双重经纪"],
+      "link": "https://www.freightwaves.com/news/ascendtms-expands-fraud-fighting-toolkit-with-searchcarriers-integration"
+    },
+    {
+      "publishedDate": "2026-07-07",
+      "publishedAt": "07.07",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
       "score": 95,
       "title": "LTL承运商Mountain Valley Express停止运营",
       "summary": "Mountain Valley Express于7月7日确认停止运营，现有账户和服务同日失效，不再接收新货。该区域LTL承运商在加州、亚利桑那州和内华达州设有13个站点，FMCSA记录显示拥有277辆动力设备，并曾在2024年底重组及裁员约105人。",
@@ -620,6 +690,20 @@
         "承运商核验"
       ],
       "link": "https://www.freightwaves.com/news/highway-post-montgomery-requiring-eld-hookups-for-all-carriers"
+    },
+    {
+      "publishedDate": "2026-07-01",
+      "publishedAt": "07.01",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 95,
+      "title": "美国拒绝按现状自动延长USMCA，跨境规则进入年度审查",
+      "summary": "美国在首次联合审查中拒绝按现状自动延长USMCA，但协定目前继续有效，三国将进入年度审查与修订谈判，直至达成方案或协定在2036年到期。美墨和美加年贸易额合计超过1.58万亿美元，卡车跨境通道将持续面对政策不确定性。",
+      "industryView": "这不是边境立即关闭，也不应据此全面上调运价；真正风险在于后续原产地、关税和通关规则反复。卡派平台应在美墨、美加报价中标注税费与查验条件，保持口岸和清关行备选方案，并缩短跨境合同报价有效期，避免把政策变化全部留给承运商承担。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["USMCA", "美墨跨境", "美加跨境"],
+      "link": "https://www.freightwaves.com/news/usmca-enters-uncertain-future-after-u-s-rejects-automatic-renewal"
     },
     {
       "publishedDate": "2026-06-30",
