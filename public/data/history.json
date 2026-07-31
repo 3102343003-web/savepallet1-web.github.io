@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-07-31",
   "newsItems": [
+    {
+      "publishedDate": "2026-07-30",
+      "publishedAt": "07.30",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "C.H. Robinson称将上诉逾6亿美元裁决，经纪审核标准仍无清晰边界",
+      "summary": "C.H. Robinson在二季度业绩会上重点回应得州逾6亿美元裁决，称公司并无过失且若裁决生效将立即上诉。涉事承运商曾为其成功运输270票，并在事故前后均获FMCSA“满意”评级；陪审团仍认定经纪商在选择承运商时存在过失，并把司机视为3PL实际雇员。",
+      "industryView": "这起后续说明，平台仅保存承运商准入时的FMCSA截图已不够。卡派应建立持续审核记录：保险与安全状态变化、司机及车辆匹配、异常换车、分包链、沟通措辞和暂停放货决定都要留痕；同时避免对承运商形成容易被解释为日常控制的指令关系，并尽快复核责任险与合同赔偿条款。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": [
+        "经纪责任",
+        "承运商审核",
+        "证据留痕"
+      ],
+      "link": "https://www.freightwaves.com/news/c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic"
+    },
+    {
+      "publishedDate": "2026-07-28",
+      "publishedAt": "07.28",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 97,
+      "title": "Werner称司机出清仍在“第三局”，合规运力收缩尚未结束",
+      "summary": "Werner首席执行官Derek Leathers称，本轮市场回升主要由供给收缩推动，司机结构性退出仍仅处于“第三局”。非本地CDL、英语能力、跨境运营执法以及ELD下架正加速拆除灰色运力；经纪责任上升也让货主和经纪商更谨慎地选择承运商。",
+      "industryView": "优质承运商的议价权可能继续提升，低价但资料不完整的车源会越来越难被客户与保险接受。卡派应将合规稳定性纳入比价权重，对高风险或高时效线路预先建立主备车队池，并在报价中说明车源锁定期限，避免最后时刻转向未经充分核验的临时运力。",
+      "category": "承运商风险",
+      "impact": "风险",
+      "tags": [
+        "司机出清",
+        "ELD",
+        "合规运力"
+      ],
+      "link": "https://www.freightwaves.com/news/werner-ceo-leathers-just-the-3rd-inning-in-driver-attrition"
+    },
+    {
+      "publishedDate": "2026-07-28",
+      "publishedAt": "07.28",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 95,
+      "title": "美国参议院SAFE法案瞄准“变色龙承运商”注册逃避行为",
+      "summary": "两党参议员提出SAFE法案，要求FMCSA开发并测试自动筛查工具，在USDOT注册时比对共同所有权、管理人员、司机、设备、地址、联系方式、保险连续性与资产转移等关联。工具只负责提示，最终决定仍由人工作出，申请人可对误报提出申诉。",
+      "industryView": "即使法案尚待审议，其筛查维度已可直接用于平台风控。卡派在新承运商准入和周期复审时，应关联比对公司历史名称、负责人、电话邮箱、地址、设备和保险记录；发现新号继承旧号资产或联系人时，暂停自动派单并转人工核验。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "变色龙承运商",
+        "USDOT注册",
+        "反欺诈"
+      ],
+      "link": "https://www.freightwaves.com/news/new-senate-bill-targets-chameleon-carriers-that-reopen-to-escape-penalties-and-enforcement"
+    },
     {
       "publishedDate": "2026-07-26",
       "publishedAt": "07.26",

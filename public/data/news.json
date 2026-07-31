@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-07-27",
-    "weekday": "MONDAY",
-    "issue": "009",
-    "updatedAt": "07.27",
+    "date": "2026-07-31",
+    "weekday": "FRIDAY",
+    "issue": "010",
+    "updatedAt": "07.31",
     "windowDays": 30,
-    "nextUpdate": "周二 10:00"
+    "nextUpdate": "周一 10:00"
   },
   "brief": {
-    "title": "运价仍处高位、合规运力偏紧，跨境交易筛查需要前置。",
-    "summary": "截至7月27日，ACT Research指标显示运价仍处近17年高位，司机供给受CDL与ELD执法约束；托运提前期也持续拉长。美墨跨境方面，美国扩大对涉物流企业的制裁，平台需同步强化锁车节奏与交易方筛查。",
+    "title": "合规运力继续出清，经纪责任与承运商身份核验同步收紧。",
+    "summary": "截至7月31日，Werner称司机结构性退出仍处早期，非本地CDL、英语能力与ELD执法将继续压缩灰色运力；C.H. Robinson逾6亿美元裁决则表明FMCSA“满意”评级不能替代持续审核。SAFE法案进一步把关联身份、保险和资产转移纳入承运商注册筛查。",
     "marketTemperature": "偏紧",
     "readingMinutes": 10
   },
   "topStories": [
     {
       "rank": "01",
-      "category": "市场运价",
-      "title": "运价保持近17年高位，合规司机仍是运力瓶颈",
-      "summary": "6月运价指数为70.2，运力扩张主要集中于大型优质车队；司机可用性指数仅34.1。",
-      "signal": "报价策略",
-      "signalText": "紧张线路缩短报价有效期并提前锁定合规运力",
+      "category": "经纪责任",
+      "title": "“满意”评级仍未挡住逾6亿美元经纪责任裁决",
+      "summary": "涉事承运商曾为C.H. Robinson成功运输270票且获FMCSA满意评级，陪审团仍认定经纪商存在过失。",
+      "signal": "审核留痕",
+      "signalText": "把持续筛查、异常处置和换车审批做成可复核证据链",
       "tone": "orange"
     },
     {
       "rank": "02",
       "category": "运力策略",
-      "title": "托运提前期升至3.74天，较近年均值高约11%",
-      "summary": "货主正更早安排提货，以缓冲关税、地缘扰动、节假日与临时找车风险。",
-      "signal": "提前锁车",
-      "signalText": "按线路紧张度给客户明确建议下单窗口",
+      "title": "Werner：司机出清仅到“第三局”，供给收缩仍将继续",
+      "summary": "非本地CDL、英语能力、跨境运营与ELD整顿正在拆除灰色运力，优质车队议价能力继续增强。",
+      "signal": "锁定运力",
+      "signalText": "紧张线路优先匹配持续合规、可追溯的稳定车队",
       "tone": "blue"
     },
     {
       "rank": "03",
-      "category": "美墨跨境",
-      "title": "美国制裁网络涉及墨西哥物流企业，交易筛查升级",
-      "summary": "美国冻结涉CJNG网络在美资产并禁止美国主体交易，名单覆盖物流、燃油和制造企业。",
-      "signal": "名单筛查",
-      "signalText": "跨境询价、准入和付款前复核OFAC及关联企业",
+      "category": "法规合规",
+      "title": "SAFE法案瞄准变色龙承运商，注册关联筛查将加强",
+      "summary": "提案要求FMCSA比对所有权、人员、设备、地址、保险及资产转移，识别换壳重开的高风险主体。",
+      "signal": "关联核验",
+      "signalText": "新承运商准入时交叉比对历史名称、联系人、设备和保险",
       "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "运力指数回升不等于所有线路宽松",
-      "summary": "大型车队扩张与合规司机短缺并存，报价仍要按线路和车型核验。"
+      "title": "不要把FMCSA评级当作审核终点",
+      "summary": "持续记录保险、司机、车辆、控制关系与异常处置，才能形成可复核的审查证据链。"
     },
     {
-      "title": "把建议下单窗口写进报价沟通",
-      "summary": "提前期已升至3.74天，临时订单应明确现货溢价和拒载风险。"
+      "title": "把承运商身份关联纳入准入",
+      "summary": "比对历史名称、负责人、电话邮箱、地址、设备和保险连续性，异常立即人工复核。"
     },
     {
-      "title": "美墨线路付款前再做一次名单筛查",
-      "summary": "核对OFAC、实际控制人与关联企业，命中或近似名称立即人工复核。"
+      "title": "紧张线路先锁定可追溯车源",
+      "summary": "司机与ELD出清仍在继续，低价但资料不全的临时运力不应作为兜底方案。"
     }
   ],
   "sources": [
@@ -63,6 +63,48 @@
     "TLI"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-07-30",
+      "publishedAt": "07.30",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "C.H. Robinson称将上诉逾6亿美元裁决，经纪审核标准仍无清晰边界",
+      "summary": "C.H. Robinson在二季度业绩会上重点回应得州逾6亿美元裁决，称公司并无过失且若裁决生效将立即上诉。涉事承运商曾为其成功运输270票，并在事故前后均获FMCSA“满意”评级；陪审团仍认定经纪商在选择承运商时存在过失，并把司机视为3PL实际雇员。",
+      "industryView": "这起后续说明，平台仅保存承运商准入时的FMCSA截图已不够。卡派应建立持续审核记录：保险与安全状态变化、司机及车辆匹配、异常换车、分包链、沟通措辞和暂停放货决定都要留痕；同时避免对承运商形成容易被解释为日常控制的指令关系，并尽快复核责任险与合同赔偿条款。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": ["经纪责任", "承运商审核", "证据留痕"],
+      "link": "https://www.freightwaves.com/news/c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic"
+    },
+    {
+      "publishedDate": "2026-07-28",
+      "publishedAt": "07.28",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 97,
+      "title": "Werner称司机出清仍在“第三局”，合规运力收缩尚未结束",
+      "summary": "Werner首席执行官Derek Leathers称，本轮市场回升主要由供给收缩推动，司机结构性退出仍仅处于“第三局”。非本地CDL、英语能力、跨境运营执法以及ELD下架正加速拆除灰色运力；经纪责任上升也让货主和经纪商更谨慎地选择承运商。",
+      "industryView": "优质承运商的议价权可能继续提升，低价但资料不完整的车源会越来越难被客户与保险接受。卡派应将合规稳定性纳入比价权重，对高风险或高时效线路预先建立主备车队池，并在报价中说明车源锁定期限，避免最后时刻转向未经充分核验的临时运力。",
+      "category": "承运商风险",
+      "impact": "风险",
+      "tags": ["司机出清", "ELD", "合规运力"],
+      "link": "https://www.freightwaves.com/news/werner-ceo-leathers-just-the-3rd-inning-in-driver-attrition"
+    },
+    {
+      "publishedDate": "2026-07-28",
+      "publishedAt": "07.28",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 95,
+      "title": "美国参议院SAFE法案瞄准“变色龙承运商”注册逃避行为",
+      "summary": "两党参议员提出SAFE法案，要求FMCSA开发并测试自动筛查工具，在USDOT注册时比对共同所有权、管理人员、司机、设备、地址、联系方式、保险连续性与资产转移等关联。工具只负责提示，最终决定仍由人工作出，申请人可对误报提出申诉。",
+      "industryView": "即使法案尚待审议，其筛查维度已可直接用于平台风控。卡派在新承运商准入和周期复审时，应关联比对公司历史名称、负责人、电话邮箱、地址、设备和保险记录；发现新号继承旧号资产或联系人时，暂停自动派单并转人工核验。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["变色龙承运商", "USDOT注册", "反欺诈"],
+      "link": "https://www.freightwaves.com/news/new-senate-bill-targets-chameleon-carriers-that-reopen-to-escape-penalties-and-enforcement"
+    },
     {
       "publishedDate": "2026-07-26",
       "publishedAt": "07.26",
