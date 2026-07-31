@@ -22,96 +22,6 @@
       "link": "https://www.freightwaves.com/news/c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic"
     },
     {
-      "publishedDate": "2026-07-30",
-      "publishedAt": "07.30",
-      "publishedDay": "周四",
-      "source": "FreightWaves",
-      "score": 94,
-      "title": "XPO零担业务创最佳运营比，称多年两位数提价周期仍在早期",
-      "summary": "XPO二季度营收同比增长13%至23.6亿美元，LTL收入增长15%，吨位增长1%、收益率增长14%；调整后运营比降至创纪录的79.9%。公司称7月吨位同比已增逾6%，行业仍处多年两位数提价周期的早期阶段，并计划依靠服务投入获得高于同行2至3个百分点的涨价。",
-      "industryView": "零担市场的量价改善会影响不足整车、跨仓拼货和末端补位成本。卡派报价时应将LTL与整车方案分开建模，统一比较基础运价、燃油费、超长超重及住宅/预约等附加费；对需要零担补位的线路缩短报价有效期，避免用旧合同价承诺新订单。",
-      "category": "市场运价",
-      "impact": "关注",
-      "tags": [
-        "LTL",
-        "运价上涨",
-        "报价结构"
-      ],
-      "link": "https://www.freightwaves.com/news/xpos-q2-earnings-beat-expectations-behind-strong-ltl-performance"
-    },
-    {
-      "publishedDate": "2026-07-30",
-      "publishedAt": "07.30",
-      "publishedDay": "周四",
-      "source": "FreightWaves",
-      "score": 91,
-      "title": "Saia提前实施7.1%普遍涨价，零担合同续约涨幅达10.7%",
-      "summary": "Saia二季度营收同比增长17%至9.57亿美元，吨位与收益率均增长8%。公司7月6日实施7.1%的普遍涨价，比去年提前三个月；二季度合同续约平均涨幅为10.7%。尽管新网点仍拖累利润率，7月吨位仍同比增长7.5%，显示全国网络扩张与提价正在同步推进。",
-      "industryView": "同一条线路的零担询价可能因客户等级、货物属性和网点成熟度出现明显价差。销售不宜只报“每车”或“每磅”单价，应同步列出涨价生效日、最低收费和附加费，并对跨周或跨月提货设置重报价条件，减少承运商调价造成的毛利倒挂。",
-      "category": "市场运价",
-      "impact": "关注",
-      "tags": [
-        "Saia",
-        "LTL涨价",
-        "合同续约"
-      ],
-      "link": "https://www.freightwaves.com/news/saias-q3-margin-guidance-disappoints-investors"
-    },
-    {
-      "publishedDate": "2026-07-30",
-      "publishedAt": "07.30",
-      "publishedDay": "周四",
-      "source": "FreightWaves",
-      "score": 89,
-      "title": "美国推出Freedom Haulers，扩大退伍军人CDL换证便利",
-      "summary": "美国交通部推出Freedom Haulers招聘计划，将军用驾驶技能考试豁免的离军申请窗口由一年延长至两年，并新增七州加入Even Exchange Program，使参与州增至34个；现役军人也可在驻地州申请和考试。Werner另承诺2027年招聘1,400名退伍军人及军属。",
-      "industryView": "政策有助于扩大合规司机入口，但历史上军用技能豁免累计约4万人，无法立刻填补非本地CDL规则预计带来的大规模退出。车队招聘可在军事基地周边加大触达，同时仍要核验实际重型车辆经验、医疗资格和保险公司的驾驶年限要求，不能因合法免试而降低承运商准入标准。",
-      "category": "法规合规",
-      "impact": "关注",
-      "tags": [
-        "CDL",
-        "司机招聘",
-        "退伍军人"
-      ],
-      "link": "https://www.freightwaves.com/news/dot-says-freedom-haulers-opens-an-express-lane-for-veterans-much-of-that-lane-was-already-built"
-    },
-    {
-      "publishedDate": "2026-07-29",
-      "publishedAt": "07.29",
-      "publishedDay": "周三",
-      "source": "FreightWaves",
-      "score": 92,
-      "title": "PACCAR利润上升，运价改善与车龄老化推动Class 8需求回暖",
-      "summary": "PACCAR二季度净利润同比增长4%至7.52亿美元，尽管全球交付量下降约2%至38,700辆。公司称订单增强与运价改善推动生产节奏回升，并预计2026年美国和加拿大Class 8零售销量为23万至27万辆；车队平均车龄上升也促使客户更新更省油的车辆。",
-      "industryView": "新车需求回暖并不代表运力会立即宽松：从下单、交付到形成可用运力仍有时滞，且优质车队会优先配置收益更高的线路。卡派应继续按线路核验实时车源，对使用老旧设备的承运商加强故障与延误预案，并关注设备更新后成本和报价结构的变化。",
-      "category": "公司动态",
-      "impact": "关注",
-      "tags": [
-        "Class 8",
-        "设备更新",
-        "运力周期"
-      ],
-      "link": "https://www.freightwaves.com/news/paccar-class-8-truck-demand"
-    },
-    {
-      "publishedDate": "2026-07-29",
-      "publishedAt": "07.29",
-      "publishedDay": "周三",
-      "source": "FreightWaves",
-      "score": 86,
-      "title": "Old Dominion上调资本开支，提前为零担市场机会扩充设备与网点",
-      "summary": "Old Dominion将全年资本开支计划由2.65亿美元上调至3.8亿美元，其中1.8亿美元用于地产和服务中心扩张、1.55亿美元用于牵引车与挂车。其二季度运营比改善至70.1%，公司还把部分原定2027年的设备采购提前到今年四季度。",
-      "industryView": "头部LTL承运商提前投入设备和网点，说明其对长期市场份额与服务能力有信心，但短期货量仍未全面走强。卡派在谈长期线路时可争取服务稳定性和容量承诺，同时保留多承运商备选，不应把资本开支等同于当下所有区域都已出现宽松运力。",
-      "category": "公司动态",
-      "impact": "利好",
-      "tags": [
-        "Old Dominion",
-        "资本开支",
-        "LTL网络"
-      ],
-      "link": "https://www.freightwaves.com/news/eyes-on-sub-70-or-old-dominion-plans-more-capex"
-    },
-    {
       "publishedDate": "2026-07-28",
       "publishedAt": "07.28",
       "publishedDay": "周二",
@@ -146,24 +56,6 @@
         "反欺诈"
       ],
       "link": "https://www.freightwaves.com/news/new-senate-bill-targets-chameleon-carriers-that-reopen-to-escape-penalties-and-enforcement"
-    },
-    {
-      "publishedDate": "2026-07-27",
-      "publishedAt": "07.27",
-      "publishedDay": "周一",
-      "source": "FreightWaves",
-      "score": 93,
-      "title": "23州支持收紧非本地CDL规则，9月口头辩论前分歧加深",
-      "summary": "由共和党州长领导的23个州提交法庭之友意见，支持FMCSA今年实施的非本地CDL限制；由民主党州长领导的多州则支持挑战方。新规大幅限制各州向外国居住者签发CDL，目前保留的主要身份类别为H-2A、H-2B和E-2，案件定于9月15日进行口头辩论。",
-      "industryView": "诉讼仍在进行，但规则执行已经影响司机供给。平台应按当前有效规则核验CDL签发州、身份类别、到期日和驾驶资格，不应押注诉讼结果提前放宽；同时对依赖非本地司机的线路准备替代车源，并把可能的供给收缩反映在报价有效期中。",
-      "category": "法规合规",
-      "impact": "风险",
-      "tags": [
-        "非本地CDL",
-        "司机合规",
-        "诉讼进展"
-      ],
-      "link": "https://www.freightwaves.com/news/political-divide-red-states-back-non-domiciled-cdl-changes"
     },
     {
       "publishedDate": "2026-07-26",
