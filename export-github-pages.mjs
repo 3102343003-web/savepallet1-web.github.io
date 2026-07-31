@@ -14,6 +14,7 @@ html = html
   .replace(/<link rel="modulepreload"[^>]*>/g, "")
   .replace(/<script[^>]*>[\s\S]*?<\/script>/g, "")
   .replace(/<\/html>[\s\S]*$/, "</html>")
+  .replaceAll("http://localhost/og.png", "public/og.png")
   .replace(/<link rel="stylesheet"[^>]*>/, `<style>${css}</style>`);
 
 const interactions = `<script>

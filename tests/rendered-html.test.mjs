@@ -36,6 +36,9 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /小红书(?:<!-- -->)? ↗/);
   assert.match(html, /公众号(?:<!-- -->)? · 待补/);
   assert.match(html, /data-news-edition/);
+  assert.match(html, /合规运力继续出清/);
+  assert.match(html, /c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic/);
+  assert.match(html, /property="og:image" content="http:\/\/localhost\/og\.png"/);
   assert.match(html, /J\.B\. Hunt二季度业绩超预期/);
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/j-b-hunts-shares-up-9-on-q2-earnings-beat/);
   assert.match(html, /https:\/\/www\.freightwaves\.com\/news\/ooida-urges-house-to-vote-on-dalilahs-law-after-deadly-pennsylvania-crash/);
@@ -74,6 +77,9 @@ test("GitHub Pages export loads the lightweight news data file", async () => {
   assert.match(html, /data-filter="市场运价"/);
   assert.match(html, /topicButtons/);
   assert.match(html, /data-news-edition/);
+  assert.match(html, /合规运力继续出清/);
+  assert.match(html, /c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic/);
+  assert.match(html, /property="og:image" content="public\/og\.png"/);
   assert.match(html, /j-b-hunts-shares-up-9-on-q2-earnings-beat/);
   assert.match(html, /jb-hunt-q2-profits-rise-as-truckload-capacity-tightens/);
   assert.match(html, /truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
