@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-07-31",
-    "weekday": "FRIDAY",
-    "issue": "010",
-    "updatedAt": "07.31",
+    "date": "2026-08-03",
+    "weekday": "MONDAY",
+    "issue": "011",
+    "updatedAt": "08.03",
     "windowDays": 30,
-    "nextUpdate": "周一 10:00"
+    "nextUpdate": "周二 10:00"
   },
   "brief": {
-    "title": "合规运力继续出清，经纪责任与承运商身份核验同步收紧。",
-    "summary": "截至7月31日，Werner称司机结构性退出仍处早期，非本地CDL、英语能力与ELD执法将继续压缩灰色运力；C.H. Robinson逾6亿美元裁决则表明FMCSA“满意”评级不能替代持续审核。SAFE法案进一步把关联身份、保险和资产转移纳入承运商注册筛查。",
+    "title": "合规运力出清推动整车提价，保险与无人运力成本同步重估。",
+    "summary": "截至8月3日，Schneider称整车运价复苏仍处早期，合同续约已出现两位数涨幅；Covenant的保险与理赔成本创历史单季新高，承运商经营压力继续传导。Aurora同时给出无人卡车每英里计价，为得州固定线路的未来运力成本提供新锚点。",
     "marketTemperature": "偏紧",
     "readingMinutes": 10
   },
   "topStories": [
     {
       "rank": "01",
-      "category": "经纪责任",
-      "title": "“满意”评级仍未挡住逾6亿美元经纪责任裁决",
-      "summary": "涉事承运商曾为C.H. Robinson成功运输270票且获FMCSA满意评级，陪审团仍认定经纪商存在过失。",
-      "signal": "审核留痕",
-      "signalText": "把持续筛查、异常处置和换车审批做成可复核证据链",
+      "category": "市场运价",
+      "title": "Schneider合同续约出现两位数涨幅，整车提价仍在早期",
+      "summary": "合规运力退出快于预期，货主增加小型招标锁定旺季运力，头部车队正在扩大现货敞口。",
+      "signal": "缩短时效",
+      "signalText": "旺季与紧张线路缩短报价有效期并提前锁定合规车源",
       "tone": "orange"
     },
     {
       "rank": "02",
-      "category": "运力策略",
-      "title": "Werner：司机出清仅到“第三局”，供给收缩仍将继续",
-      "summary": "非本地CDL、英语能力、跨境运营与ELD整顿正在拆除灰色运力，优质车队议价能力继续增强。",
-      "signal": "锁定运力",
-      "signalText": "紧张线路优先匹配持续合规、可追溯的稳定车队",
+      "category": "承运商风险",
+      "title": "Covenant保险与理赔成本创历史单季新高",
+      "summary": "七位数索赔变得更常见，保险成本已明显拖累高价值、加急和专用运输的运营利润。",
+      "signal": "保险复核",
+      "signalText": "高货值订单核验责任险、自留额、货物险与事故赔偿边界",
       "tone": "blue"
     },
     {
       "rank": "03",
-      "category": "法规合规",
-      "title": "SAFE法案瞄准变色龙承运商，注册关联筛查将加强",
-      "summary": "提案要求FMCSA比对所有权、人员、设备、地址、保险及资产转移，识别换壳重开的高风险主体。",
-      "signal": "关联核验",
-      "signalText": "新承运商准入时交叉比对历史名称、联系人、设备和保险",
+      "category": "运力策略",
+      "title": "Aurora公布无人卡车全包与订阅两种每英里价格",
+      "summary": "全包服务目标每英里2美元以上，订阅模式0.85美元起，但后者不含车辆、燃油、保险和维修。",
+      "signal": "全成本比价",
+      "signalText": "只在已运营线路按资质、责任主体和完整成本评估无人运力",
       "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "不要把FMCSA评级当作审核终点",
-      "summary": "持续记录保险、司机、车辆、控制关系与异常处置，才能形成可复核的审查证据链。"
+      "title": "旺季报价要缩短有效期",
+      "summary": "合同续约与迷你招标已明显提价，紧张线路应先锁车再对外承诺长期低价。"
     },
     {
-      "title": "把承运商身份关联纳入准入",
-      "summary": "比对历史名称、负责人、电话邮箱、地址、设备和保险连续性，异常立即人工复核。"
+      "title": "高货值订单先核清保险边界",
+      "summary": "核验责任险、自留额、货物险、理赔记录和事故赔偿条款，异常低价转人工复核。"
     },
     {
-      "title": "紧张线路先锁定可追溯车源",
-      "summary": "司机与ELD出清仍在继续，低价但资料不全的临时运力不应作为兜底方案。"
+      "title": "无人运力必须按全成本比较",
+      "summary": "订阅价不含车辆、燃油、维修和保险，只在已商业运营线路评估实际节省。"
     }
   ],
   "sources": [
@@ -63,6 +63,48 @@
     "TLI"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-08-01",
+      "publishedAt": "08.01",
+      "publishedDay": "周六",
+      "source": "FreightWaves",
+      "score": 92,
+      "title": "Aurora公布无人卡车计价：全包每英里2美元以上，订阅模式0.85美元起",
+      "summary": "Aurora公布两种无人卡车商业模式：由其持有运营资质、车辆和保险的TaaS全包服务，目标收入为每英里2美元以上；由车队自购自管车辆的DaaS订阅价为每英里0.85美元以上。公司计划2026年底运营逾200辆无人卡车，并于2027年逐步转向订阅模式。",
+      "industryView": "这给卡派平台提供了可比较的无人运力成本锚点，但0.85美元仅替代驾驶员，不含车辆、燃油、维修、保险、轮胎和远程支持。短期应只在已商业运营的得州固定线路评估，并明确运营资质、事故责任和保险主体；不要把远期高利用率假设直接当成现货低价。",
+      "category": "司机与车队",
+      "impact": "关注",
+      "tags": ["无人驾驶", "每英里计价", "得州线路"],
+      "link": "https://www.freightwaves.com/news/aurora-q2-earnings-driverless-truck-rates"
+    },
+    {
+      "publishedDate": "2026-07-31",
+      "publishedAt": "07.31",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "Schneider称整车运价复苏仍在早期，合同续约已现两位数涨幅",
+      "summary": "Schneider表示，受合规运力退出和司机招聘趋紧影响，美国整车市场仍处运价复苏早期。二季度网络车队合同续约获得两位数涨幅，货主为旺季锁定运力而增加小型招标；单向运输每车周收入同比增长16%，公司还提高现货市场敞口。",
+      "industryView": "头部车队提价和货主提前小标，说明平台报价不能继续沿用衰退期的长有效期。卡派应按线路区分现货与合同运力，对旺季、干线和司机紧张区域缩短报价时限，提前锁定合规车源；同时把迷你招标和拒载变化纳入销售提示，避免低价承诺后被迫补车。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": ["Schneider", "合同涨价", "运力收紧"],
+      "link": "https://www.freightwaves.com/news/schneider-national-pushes-price-amid-market-imbalance"
+    },
+    {
+      "publishedDate": "2026-07-31",
+      "publishedAt": "07.31",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "Covenant保险与理赔成本创历史单季新高，高价值运输利润承压",
+      "summary": "Covenant二季度保险及理赔支出升至1810万美元，为公司历史最高季度；Dedicated与Expedited业务运营比均被拖累1.5至2个百分点。管理层称七位数索赔已更常见，索赔波动也使自保成本更难预测；同期加急车队规模同比缩减17%。",
+      "industryView": "保险成本正在直接侵蚀承运商盈利，并可能传导到高价值、双司机和严时效订单的报价。卡派平台应在比价时核验承运商责任险、自留额、理赔记录及货物险边界，对异常低价的高货值运输设置人工复核；合同中还应明确事故通知、赔偿和替代运力责任。",
+      "category": "承运商风险",
+      "impact": "风险",
+      "tags": ["保险成本", "理赔风险", "高价值运输"],
+      "link": "https://www.freightwaves.com/news/covenants-earnings-drop-stock-company-focused-long-term"
+    },
     {
       "publishedDate": "2026-07-30",
       "publishedAt": "07.30",
