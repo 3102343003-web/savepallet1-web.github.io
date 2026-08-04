@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-04",
   "newsItems": [
+    {
+      "publishedDate": "2026-08-03",
+      "publishedAt": "08.03",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "美国7月PMI创四年新高，LTL吨位回升且Saia普涨7.1%",
+      "summary": "美国7月ISM制造业PMI升至55.6，创2022年5月以来最高，新订单达56.7且客户库存仍偏低。四家上市LTL承运商二季度吨位同比平均增长2.6%，7月初值增5.1%；Saia已自7月6日起实施7.1%普涨，多家车队对下半年需求转趋乐观。",
+      "industryView": "制造业扩张通常领先LTL吨位数月，当前吨位回升、客户低库存和普涨同时出现，区域拼板运价与舱位可能继续趋紧。卡派应更新LTL基准价、总涨价和附加费，缩短报价有效期；工业带与旺季线路提前锁定承运商，并保留TL/LTL转换方案以应对容量波动。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": [
+        "LTL",
+        "制造业PMI",
+        "运价上涨"
+      ],
+      "link": "https://www.freightwaves.com/news/julys-55-6-pmi-highest-in-4-years-ltl-carriers-getting-bullish"
+    },
+    {
+      "publishedDate": "2026-08-03",
+      "publishedAt": "08.03",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 96,
+      "title": "STG短驳司机误分类案和解，新泽西独立承包模式成本上升",
+      "summary": "STG Logistics与新泽西就港口短驳司机误分类案达成和解，现金支付277.5万美元，其中220万美元给司机。和解申报总值超过8090万美元，但大部分将随其破产重组被取消；州方认定STG未通过ABC测试，而新州将于10月1日把该测试正式写入法律。",
+      "industryView": "新泽西港口短驳高度依赖独立承包司机，误分类责任会通过车队费率、保险与可用运力传导。卡派在比价和派车时应核对承运商用工模式、司机控制边界、工资及工伤保险；对新州进出港订单预留合规成本和替代车队，避免最低价来自不可持续的承包结构。",
+      "category": "承运商风险",
+      "impact": "风险",
+      "tags": [
+        "港口短驳",
+        "司机误分类",
+        "新泽西"
+      ],
+      "link": "https://www.freightwaves.com/news/stg-drayage-drivers-to-get-cash-in-nj-misclassification-case"
+    },
+    {
+      "publishedDate": "2026-08-03",
+      "publishedAt": "08.03",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 98,
+      "title": "路易斯安那CDL受贿造假案：至少124人未培训、未考试获证",
+      "summary": "联邦检察官称，路易斯安那一项受贿计划令至少124人在未完成知识考试、入门司机培训和技能考试的情况下取得CDL。申请人平均支付约5000美元，涉案人员伪造考试答案、培训记录与路考结果；3名被告已于7月29日认罪，案件覆盖2020年至2024年。",
+      "industryView": "这起案件说明“CDL状态有效”并不等于司机真实完成培训和考试。卡派应在承运商准入与派车前交叉核验ELDT来源、驾驶记录、雇主培训和实际驾龄，对培训机构、考试地点或签发流程异常的司机升级人工复核；高时效订单还需预留合格替换司机。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "CDL欺诈",
+        "ELDT培训",
+        "司机资质"
+      ],
+      "link": "https://www.freightwaves.com/news/louisiana-bribery-scheme-gave-124-people-cdls-without-training-or-tests"
+    },
     {
       "publishedDate": "2026-08-01",
       "publishedAt": "08.01",
