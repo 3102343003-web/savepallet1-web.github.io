@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-08-04",
-    "weekday": "TUESDAY",
-    "issue": "012",
-    "updatedAt": "08.04",
+    "date": "2026-08-07",
+    "weekday": "FRIDAY",
+    "issue": "013",
+    "updatedAt": "08.07",
     "windowDays": 30,
-    "nextUpdate": "周三 10:00"
+    "nextUpdate": "周一 10:00"
   },
   "brief": {
-    "title": "LTL需求加速回升，短驳用工与CDL资质风险同步抬升。",
-    "summary": "截至8月4日，7月制造业PMI升至四年高位，上市LTL承运商吨位继续改善并出现7.1%普涨；新泽西STG短驳司机误分类和解暴露独立承包模式的用工成本，路易斯安那124人通过受贿获得未培训CDL，平台需同时重估运价与承运商合规。",
+    "title": "卡车运力加速收缩，司机执法与经纪商筛选责任同步升级。",
+    "summary": "截至8月7日，7月运输运力指数降至28.4、价格指数仍达86.9，订舱提前期延长；中西部四州联邦行动发出766项停运令并逮捕86名司机，BAVRA标准又把货主选择经纪商、监督流程与提货身份核验纳入可证明的审慎责任。",
     "marketTemperature": "偏紧",
     "readingMinutes": 10
   },
@@ -18,51 +18,91 @@
     {
       "rank": "01",
       "category": "市场运价",
-      "title": "制造业PMI创四年新高，LTL吨位与提价信号增强",
-      "summary": "LTL吨位连续改善、客户库存偏低，Saia已实施7.1%普涨，工业货源正加快回流。",
-      "signal": "更新基准",
-      "signalText": "重算LTL基准价与附加费，工业带线路提前锁定承运商",
+      "title": "运输运力指数降至28.4，价格仍在86.9高位",
+      "summary": "运力收缩并列十年第二快，整车订舱提前期升至3.74天，合同费率继续上行。",
+      "signal": "提前锁车",
+      "signalText": "缩短报价有效期，旺季与工业带线路同步配置主备承运商",
       "tone": "orange"
     },
     {
       "rank": "02",
-      "category": "承运商风险",
-      "title": "STG短驳司机误分类和解，新州用工成本面临重估",
-      "summary": "新泽西认定STG未通过ABC测试；10月1日测试法定化前，港口短驳承包模式风险上升。",
-      "signal": "用工核验",
-      "signalText": "新州进出港订单核对司机分类、控制边界和工伤保险",
+      "category": "法规合规",
+      "title": "四州联邦行动发出766项停运令，86名司机被捕",
+      "summary": "执法同时核查司机资质、车辆安全、CDL造假和货物身份，中西部可用运力承压。",
+      "signal": "派前复核",
+      "signalText": "跨州干线核验CDL、英语能力、车辆检查并提高备选运力比例",
       "tone": "blue"
     },
     {
       "rank": "03",
-      "category": "法规合规",
-      "title": "路易斯安那至少124人未经培训考试取得CDL",
-      "summary": "受贿链条伪造知识考试、ELDT培训和路考记录，三名被告已认罪。",
-      "signal": "资质追溯",
-      "signalText": "有效CDL仍需交叉核验培训来源、驾驶记录与实际驾龄",
+      "category": "经纪责任",
+      "title": "BAVRA标准把经纪商选择和提货核验纳入责任链",
+      "summary": "货主不能只看权限、保证金和保险，还要书面审查筛选制度、运营控制与异常升级。",
+      "signal": "留存证据",
+      "signalText": "记录筛选依据并在提货环节核对司机、车辆和USDOT身份",
       "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "更新LTL基准价与附加费",
-      "summary": "吨位回升叠加普涨，工业带线路缩短报价时效并提前锁车。"
+      "title": "整车报价缩短有效期",
+      "summary": "运力加速收缩且价格高位，按线路上调容量溢价并提前锁车。"
     },
     {
-      "title": "新州短驳先查用工模式",
-      "summary": "进出港订单核验司机分类、控制边界、工资记录和工伤保险。"
+      "title": "中西部干线提高备选比例",
+      "summary": "派车前查CDL、英语能力和车辆检查，预留停运后的换车成本。"
     },
     {
-      "title": "有效CDL不等于真实合格",
-      "summary": "交叉核验ELDT来源、驾驶记录和实际驾龄，异常资质转人工复核。"
+      "title": "经纪商筛选必须可审计",
+      "summary": "留存书面标准、异常升级和提货身份核验，不只比较最低价。"
     }
   ],
   "sources": [
-    "FreightWaves",
-    "FleetOwner",
-    "TLI"
+    "FreightWaves"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-08-05",
+      "publishedAt": "08.05",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 98,
+      "title": "联邦四州执法逮捕86名卡车司机，发出766项停运令",
+      "summary": "DHS与DOT于7月28日至30日在伊利诺伊、印第安纳、爱荷华和俄亥俄开展第二轮“公路盾牌”行动，产生约766项司机及车辆停运令并逮捕86名卡车司机；另有51名移民被拘、21名非本地CDL持有人被扣，查获近100万美元被盗货物，重点核查资质、车辆安全和CDL造假。",
+      "industryView": "中西部四州集中执法会直接减少短期可用司机和车辆，合规不足的小车队报价虽低，却更容易在途中被停运。卡派应在派车前复核CDL签发州、非本地证件、英语能力、车辆检查和货物身份，对跨州干线提高备选运力比例，并向货主说明可能的延误与换车成本。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["联邦执法", "停运令", "CDL合规"],
+      "link": "https://www.freightwaves.com/news/federal-crackdown-leads-to-arrest-of-86-truck-drivers-766-out-of-service-orders"
+    },
+    {
+      "publishedDate": "2026-08-05",
+      "publishedAt": "08.05",
+      "publishedDay": "周三",
+      "source": "FreightWaves",
+      "score": 97,
+      "title": "BAVRA标准把货主经纪商筛选与提货核验纳入责任链",
+      "summary": "Carrier Assure创始人Cassandra Gaines发布34页BAVRA标准，要求货主以书面、可审计的方法选择并持续监督经纪商和货代。框架强调仅核对经营权限、保证金和保险并不足够，还应审查承运商筛选制度、人员培训、运营控制、预警升级及提货时司机、车辆和USDOT身份匹配。",
+      "industryView": "这套框架把合理审慎义务向货主选择经纪商的起点前移，也与卡派的比价和撮合流程直接相关。平台应留存候选经纪商与承运商的筛选依据、异常信号和人工复核记录，在提货环节核对司机、车辆及USDOT；既不替代承运商日常管理，也不能仅凭最低价或有效权限放行。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": ["BAVRA", "经纪商筛选", "提货核验"],
+      "link": "https://www.freightwaves.com/news/cassandra-gaines-expands-transport-risk-framework-with-bavra-standard-for-shippers"
+    },
+    {
+      "publishedDate": "2026-08-04",
+      "publishedAt": "08.04",
+      "publishedDay": "周二",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "7月运输运力指数降至28.4，价格维持86.9高位",
+      "summary": "7月物流经理指数显示，美国运输运力分项降至28.4，较6月再快2.4点收缩，并列十年第二低；运输价格仍处86.9高位。监管清退不合格司机、上市车队不扩设备，共同压缩卡车供给，平均订舱提前期升至3.74天，Werner预计三季度每英里费率同比上涨10%至13%。",
+      "industryView": "运力与价格指标同时指向卖方市场，卡派不能只沿用昨日历史均价。平台应缩短整车报价有效期，按线路上调容量溢价，并将3.74天作为提前锁车基准；对旺季与工业带订单同时保留主备承运商，避免最低价车队临时拒单后转入高价现货。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": ["运力收缩", "整车运价", "提前订舱"],
+      "link": "https://www.freightwaves.com/news/transportation-capacity-falls-faster-in-july-rates-remains-high"
+    },
     {
       "publishedDate": "2026-08-03",
       "publishedAt": "08.03",
