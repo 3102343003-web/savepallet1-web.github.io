@@ -145,7 +145,7 @@ export default function Home() {
             </section>
 
             <section className="section-block" id="brief">
-              <div className="section-heading"><div><span className="section-index">01</span><h2>今日热点 TOP 3</h2></div><span className="section-note">近 30 天数据 · 基于时效、行业影响与销售价值排序</span></div>
+              <div className="section-heading"><div><span className="section-index">01</span><h2>今日热点 TOP 3</h2></div><span className="section-note">近 {content.edition.windowDays} 天数据 · 基于时效、行业影响与销售价值排序</span></div>
               <div className="top-story-grid" data-news-top-stories>{content.topStories.map((story) => <article className={`top-story ${story.tone}`} key={story.rank}><div className="story-meta"><span>{story.rank}</span><b>{story.category}</b></div><h3>{story.title}</h3><p>{story.summary}</p><div className="story-signal"><span>{story.signal}</span><strong>{story.signalText}</strong></div></article>)}</div>
             </section>
 
