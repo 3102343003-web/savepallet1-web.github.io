@@ -5,7 +5,7 @@
     "weekday": "TUESDAY",
     "issue": "014",
     "updatedAt": "08.11",
-    "windowDays": 30,
+    "windowDays": 90,
     "nextUpdate": "周三 10:00"
   },
   "brief": {
