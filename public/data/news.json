@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-08-07",
-    "weekday": "FRIDAY",
-    "issue": "013",
-    "updatedAt": "08.07",
+    "date": "2026-08-11",
+    "weekday": "TUESDAY",
+    "issue": "014",
+    "updatedAt": "08.11",
     "windowDays": 30,
-    "nextUpdate": "周一 10:00"
+    "nextUpdate": "周三 10:00"
   },
   "brief": {
-    "title": "卡车运力加速收缩，司机执法与经纪商筛选责任同步升级。",
-    "summary": "截至8月7日，7月运输运力指数降至28.4、价格指数仍达86.9，订舱提前期延长；中西部四州联邦行动发出766项停运令并逮捕86名司机，BAVRA标准又把货主选择经纪商、监督流程与提货身份核验纳入可证明的审慎责任。",
+    "title": "长途货量转向铁路，英语规则与承运商筛选继续压缩合规运力。",
+    "summary": "截至8月11日，800英里以上长途卡车标书量降至年内低点，卡铁价差推动货主转向联运；FMCSA拟把英语不合格停运规则永久化，已影响逾2.6万名司机；Landstar四年剔除逾3.5万家承运商，平台需同时重算运输组合与合规运力价值。",
     "marketTemperature": "偏紧",
     "readingMinutes": 10
   },
@@ -18,49 +18,91 @@
     {
       "rank": "01",
       "category": "市场运价",
-      "title": "运输运力指数降至28.4，价格仍在86.9高位",
-      "summary": "运力收缩并列十年第二快，整车订舱提前期升至3.74天，合同费率继续上行。",
-      "signal": "提前锁车",
-      "signalText": "缩短报价有效期，旺季与工业带线路同步配置主备承运商",
+      "title": "长途卡车货量转向铁路，800英里以上需求降至年内低点",
+      "summary": "国内集装箱同比增10%，长途卡车标书量持平，扩大的卡铁价差正在改变货主采购。",
+      "signal": "重算组合",
+      "signalText": "长途线路同步比较整车与铁路联运，避免只按历史卡车价报价",
       "tone": "orange"
     },
     {
       "rank": "02",
       "category": "法规合规",
-      "title": "四州联邦行动发出766项停运令，86名司机被捕",
-      "summary": "执法同时核查司机资质、车辆安全、CDL造假和货物身份，中西部可用运力承压。",
-      "signal": "派前复核",
-      "signalText": "跨州干线核验CDL、英语能力、车辆检查并提高备选运力比例",
+      "title": "FMCSA拟永久化英语停运规则，已影响2.6万名司机",
+      "summary": "提案拟统一全国执法，并明确美墨边境商业区内外驾驶员的停运边界。",
+      "signal": "复核司机",
+      "signalText": "跨州与跨境订单核验英语能力、运营区域并预留换司机成本",
       "tone": "blue"
     },
     {
       "rank": "03",
       "category": "经纪责任",
-      "title": "BAVRA标准把经纪商选择和提货核验纳入责任链",
-      "summary": "货主不能只看权限、保证金和保险，还要书面审查筛选制度、运营控制与异常升级。",
-      "signal": "留存证据",
-      "signalText": "记录筛选依据并在提货环节核对司机、车辆和USDOT身份",
+      "title": "Landstar四年剔除3.5万家承运商，批准池缩减35%",
+      "summary": "安全、欺诈与Montgomery责任压力推动经纪商持续收紧准入，合规车源更稀缺。",
+      "signal": "优先质量",
+      "signalText": "报价同时展示车源验证等级、筛选依据和锁定期限",
       "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "整车报价缩短有效期",
-      "summary": "运力加速收缩且价格高位，按线路上调容量溢价并提前锁车。"
+      "title": "800英里以上先做多式比价",
+      "summary": "同时比较整车与铁路联运的门到门价格、时效和短驳成本。"
     },
     {
-      "title": "中西部干线提高备选比例",
-      "summary": "派车前查CDL、英语能力和车辆检查，预留停运后的换车成本。"
+      "title": "跨境司机查英语与运营区",
+      "summary": "区分边境商业区和美国境内续程，预留换司机与转运成本。"
     },
     {
-      "title": "经纪商筛选必须可审计",
-      "summary": "留存书面标准、异常升级和提货身份核验，不只比较最低价。"
+      "title": "低价车源要看筛选证据",
+      "summary": "展示承运商验证等级、保险安全状态和异常历史，不只报最低价。"
     }
   ],
   "sources": [
     "FreightWaves"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-08-10",
+      "publishedAt": "08.10",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 98,
+      "title": "Landstar四年剔除逾3.5万家承运商，批准车源池缩减35%",
+      "summary": "Landstar披露，四年内将获准承接经纪货物的承运商从逾10万家削减至约6.46万家，减少超过3.5万家、约35%，并称不会放松安全、身份、欺诈和合规审查。二季度其卡车收入同比增19%，货量增2%，单票收入增17%；Montgomery判决后，经纪责任与索赔压力进一步抬高筛选门槛。",
+      "industryView": "这说明“名义上可用的车源”不等于平台真正能放心成交的运力，严格筛选会让合规承运商更稀缺、更有议价权。卡派应把承运商池分为已验证、待复核和禁用层级，记录身份、保险、安全与异常历史；销售报价需同步说明车源质量和锁定期限，不能只展示最低价。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": ["Landstar", "承运商筛选", "经纪责任"],
+      "link": "https://www.freightwaves.com/news/landstar-has-cut-more-than-35000-carriers-from-approved-network"
+    },
+    {
+      "publishedDate": "2026-08-10",
+      "publishedAt": "08.10",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "FMCSA拟永久化英语停运规则，逾2.6万名司机已受影响",
+      "summary": "FMCSA拟把英语能力执法正式写入联邦法规，要求无法充分读说英语或理解道路标志的商用司机停运，并统一各州执行标准。DOT称严格执法恢复后已有逾2.6万名司机因此停运；提案还明确美墨边境商业区内外的处理差异，最终规则出台前将公开征求意见。",
+      "industryView": "英语停运规则若永久化，跨州及美墨线路的合规司机供给会继续收缩，且边境区内可运行不代表可深入美国内陆。卡派应核验司机英语沟通能力、运营区域与证件状态，跨境报价区分边境短驳和美国境内续程；紧张线路预留换司机、转运与延误成本。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["英语能力", "FMCSA", "美墨跨境"],
+      "link": "https://www.freightwaves.com/news/after-sidelining-26000-truck-drivers-fmcsa-seeks-to-lock-in-english-rules"
+    },
+    {
+      "publishedDate": "2026-08-09",
+      "publishedAt": "08.09",
+      "publishedDay": "周日",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "卡铁价差扩大推动货量转移，长途卡车需求降至年内低点",
+      "summary": "FreightWaves SONAR显示，美国国内集装箱联运量同比增长10%，而800英里以上长途卡车标书量持平并降至年内低点。芝加哥至新泽西卡车合同价同比涨31%，铁路联运仅涨5%；亚特兰大至新泽西卡车价涨近60%，联运约6%，巨大价差正推动货主转向铁路。",
+      "industryView": "这不是卡车市场整体转弱，而是高运价把可替代的长途货量推向铁路。卡派应在800英里以上、时效弹性较大的线路同时展示整车与铁路联运方案，比较门到门时效、短驳、装卸和异常成本；对旺季或低库存客户保留卡车备选，避免过度依赖单一模式。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": ["铁路联运", "长途整车", "运输组合"],
+      "link": "https://www.freightwaves.com/news/modal-shift-dampens-trucking-market"
+    },
     {
       "publishedDate": "2026-08-05",
       "publishedAt": "08.05",

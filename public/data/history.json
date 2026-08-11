@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-08-07",
+  "updatedAt": "2026-08-11",
   "newsItems": [
+    {
+      "publishedDate": "2026-08-10",
+      "publishedAt": "08.10",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 98,
+      "title": "Landstar四年剔除逾3.5万家承运商，批准车源池缩减35%",
+      "summary": "Landstar披露，四年内将获准承接经纪货物的承运商从逾10万家削减至约6.46万家，减少超过3.5万家、约35%，并称不会放松安全、身份、欺诈和合规审查。二季度其卡车收入同比增19%，货量增2%，单票收入增17%；Montgomery判决后，经纪责任与索赔压力进一步抬高筛选门槛。",
+      "industryView": "这说明“名义上可用的车源”不等于平台真正能放心成交的运力，严格筛选会让合规承运商更稀缺、更有议价权。卡派应把承运商池分为已验证、待复核和禁用层级，记录身份、保险、安全与异常历史；销售报价需同步说明车源质量和锁定期限，不能只展示最低价。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": [
+        "Landstar",
+        "承运商筛选",
+        "经纪责任"
+      ],
+      "link": "https://www.freightwaves.com/news/landstar-has-cut-more-than-35000-carriers-from-approved-network"
+    },
+    {
+      "publishedDate": "2026-08-10",
+      "publishedAt": "08.10",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "FMCSA拟永久化英语停运规则，逾2.6万名司机已受影响",
+      "summary": "FMCSA拟把英语能力执法正式写入联邦法规，要求无法充分读说英语或理解道路标志的商用司机停运，并统一各州执行标准。DOT称严格执法恢复后已有逾2.6万名司机因此停运；提案还明确美墨边境商业区内外的处理差异，最终规则出台前将公开征求意见。",
+      "industryView": "英语停运规则若永久化，跨州及美墨线路的合规司机供给会继续收缩，且边境区内可运行不代表可深入美国内陆。卡派应核验司机英语沟通能力、运营区域与证件状态，跨境报价区分边境短驳和美国境内续程；紧张线路预留换司机、转运与延误成本。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": [
+        "英语能力",
+        "FMCSA",
+        "美墨跨境"
+      ],
+      "link": "https://www.freightwaves.com/news/after-sidelining-26000-truck-drivers-fmcsa-seeks-to-lock-in-english-rules"
+    },
+    {
+      "publishedDate": "2026-08-09",
+      "publishedAt": "08.09",
+      "publishedDay": "周日",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "卡铁价差扩大推动货量转移，长途卡车需求降至年内低点",
+      "summary": "FreightWaves SONAR显示，美国国内集装箱联运量同比增长10%，而800英里以上长途卡车标书量持平并降至年内低点。芝加哥至新泽西卡车合同价同比涨31%，铁路联运仅涨5%；亚特兰大至新泽西卡车价涨近60%，联运约6%，巨大价差正推动货主转向铁路。",
+      "industryView": "这不是卡车市场整体转弱，而是高运价把可替代的长途货量推向铁路。卡派应在800英里以上、时效弹性较大的线路同时展示整车与铁路联运方案，比较门到门时效、短驳、装卸和异常成本；对旺季或低库存客户保留卡车备选，避免过度依赖单一模式。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": [
+        "铁路联运",
+        "长途整车",
+        "运输组合"
+      ],
+      "link": "https://www.freightwaves.com/news/modal-shift-dampens-trucking-market"
+    },
     {
       "publishedDate": "2026-08-05",
       "publishedAt": "08.05",
