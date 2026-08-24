@@ -1,8 +1,62 @@
 {
   "schemaVersion": 1,
   "retainedDays": 365,
-  "updatedAt": "2026-08-11",
+  "updatedAt": "2026-08-24",
   "newsItems": [
+    {
+      "publishedDate": "2026-08-21",
+      "publishedAt": "08.21",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "Montgomery判决后两起经纪责任案件继续推进，双重经纪成审查重点",
+      "summary": "Montgomery判决削弱经纪商以联邦法排除州级安全责任诉讼的保护后，涉及J.B. Hunt和AONE的两起案件继续推进。争议集中在经纪商是否忽视承运商事故、检查违规及英语问题，以及明知承运商无经纪授权却继续允许其转包货物，法院均在审查3PL的合理筛选义务。",
+      "industryView": "平台不能把承运商签约后的一切风险都留给车队。卡派应核验实际承运方、FMCSA授权、安全及事故记录，在合同中禁止未经批准的再次转包，并保存每次派车前的复核证据；销售选择低价车源时，也要向客户说明验证等级和责任边界。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": [
+        "经纪责任",
+        "双重经纪",
+        "承运商筛选"
+      ],
+      "link": "https://www.freightwaves.com/news/the-list-grows-2-more-cases-proceeding-on-broker-liability"
+    },
+    {
+      "publishedDate": "2026-08-20",
+      "publishedAt": "08.20",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "墨西哥对美出口增长35.8%，司机短缺与边境执法支撑北向运价",
+      "summary": "墨西哥6月出口同比增长34.4%，其中非石油产品对美出口增长35.8%，科技和制造业货物继续拉动北向卡车需求。与此同时，B-1签证、英语要求及文件和货物固定审查收紧，合规司机减少；拉雷多货量周降6.7%，但北向重点产区承运商仍保持选择性。",
+      "industryView": "美墨跨境呈现需求强、局部短期放松并存，不能用拉雷多一周回落判断全面降价。卡派应按起运州、口岸和美国续程拆分报价，提前核验司机签证、英语能力、货值重量和绑扎文件；曼萨尼约相关货物还需为港口与公路拥堵预留缓冲。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": [
+        "美墨跨境",
+        "北向运力",
+        "边境合规"
+      ],
+      "link": "https://www.freightwaves.com/news/driver-shortages-booming-exports-reshape-us-mexico-freight-market"
+    },
+    {
+      "publishedDate": "2026-08-17",
+      "publishedAt": "08.17",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "Cass整车干线指数同比上涨8.6%，创四年最大涨幅",
+      "summary": "Cass数据显示，7月整车干线指数环比上涨2.3%、同比上涨8.6%，连续第19个月同比增长并创四年来最大升幅；同期货运量同比下降4.8%、经季调环比下降2.2%。合同价大幅重定价、合规运力退出及货主转向高质量承运商，使运价在需求疲弱时仍继续上行。",
+      "industryView": "这说明平台不能把货量下滑直接解释为客户一定能拿到低价，供给收缩正在主导整车价格。卡派应更新合同和现货基准，按线路、车型与服务质量分层报价，对旺季和拒载偏高线路缩短有效期；同时保留铁路联运方案，帮助时效弹性客户控制成本。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": [
+        "Cass指数",
+        "整车运价",
+        "运力收缩"
+      ],
+      "link": "https://www.freightwaves.com/news/truckload-linehaul-rates-rip-higher-in-july-cass-says"
+    },
     {
       "publishedDate": "2026-08-10",
       "publishedAt": "08.10",
