@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-08-11",
-    "weekday": "TUESDAY",
-    "issue": "014",
-    "updatedAt": "08.11",
+    "date": "2026-08-24",
+    "weekday": "MONDAY",
+    "issue": "015",
+    "updatedAt": "08.24",
     "windowDays": 90,
-    "nextUpdate": "周三 10:00"
+    "nextUpdate": "周二 10:00"
   },
   "brief": {
-    "title": "长途货量转向铁路，英语规则与承运商筛选继续压缩合规运力。",
-    "summary": "截至8月11日，800英里以上长途卡车标书量降至年内低点，卡铁价差推动货主转向联运；FMCSA拟把英语不合格停运规则永久化，已影响逾2.6万名司机；Landstar四年剔除逾3.5万家承运商，平台需同时重算运输组合与合规运力价值。",
+    "title": "货量偏弱但整车运价继续上行，美墨合规运力与经纪责任同步收紧。",
+    "summary": "截至8月24日，Cass整车干线指数同比上涨8.6%、创四年最大涨幅，即使货量走弱也未阻止合同价上行；墨西哥对美出口增长带动北向需求，但司机与边境合规限制车源；Montgomery判决后两起经纪责任案件继续推进，平台需同时缩短报价有效期并加强承运商筛选。",
     "marketTemperature": "偏紧",
     "readingMinutes": 10
   },
@@ -18,49 +18,91 @@
     {
       "rank": "01",
       "category": "市场运价",
-      "title": "长途卡车货量转向铁路，800英里以上需求降至年内低点",
-      "summary": "国内集装箱同比增10%，长途卡车标书量持平，扩大的卡铁价差正在改变货主采购。",
-      "signal": "重算组合",
-      "signalText": "长途线路同步比较整车与铁路联运，避免只按历史卡车价报价",
+      "title": "Cass整车干线指数同比涨8.6%，创四年最大涨幅",
+      "summary": "7月货运量同比下降4.8%，但干线费率环比涨2.3%，供给收缩正在压过需求疲软。",
+      "signal": "缩短时效",
+      "signalText": "合同与现货报价同步更新，紧张线路缩短价格有效期",
       "tone": "orange"
     },
     {
       "rank": "02",
-      "category": "法规合规",
-      "title": "FMCSA拟永久化英语停运规则，已影响2.6万名司机",
-      "summary": "提案拟统一全国执法，并明确美墨边境商业区内外驾驶员的停运边界。",
-      "signal": "复核司机",
-      "signalText": "跨州与跨境订单核验英语能力、运营区域并预留换司机成本",
+      "category": "市场运价",
+      "title": "墨西哥对美出口增长35.8%，北向合规车源继续吃紧",
+      "summary": "制造业与科技货推动北向需求，但B-1签证、英语执法和边境文件审查限制运力。",
+      "signal": "预留缓冲",
+      "signalText": "美墨北向线提前锁车，并为清关、换司机和港口拥堵留出时间",
       "tone": "blue"
     },
     {
       "rank": "03",
       "category": "经纪责任",
-      "title": "Landstar四年剔除3.5万家承运商，批准池缩减35%",
-      "summary": "安全、欺诈与Montgomery责任压力推动经纪商持续收紧准入，合规车源更稀缺。",
-      "signal": "优先质量",
-      "signalText": "报价同时展示车源验证等级、筛选依据和锁定期限",
+      "title": "Montgomery判决后两起经纪责任案件继续推进",
+      "summary": "J.B. Hunt与AONE案件聚焦安全记录、双重经纪及3PL是否履行合理筛选义务。",
+      "signal": "留存证据",
+      "signalText": "记录承运商安全、授权、转包限制与派车前复核过程",
       "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "800英里以上先做多式比价",
-      "summary": "同时比较整车与铁路联运的门到门价格、时效和短驳成本。"
+      "title": "货量弱不等于运价会降",
+      "summary": "合同价已创四年最大同比涨幅，重点线路要缩短报价有效期。"
     },
     {
-      "title": "跨境司机查英语与运营区",
-      "summary": "区分边境商业区和美国境内续程，预留换司机与转运成本。"
+      "title": "美墨北向提前锁合规车源",
+      "summary": "核验B-1签证、英语能力和申报文件，并预留清关及港口拥堵时间。"
     },
     {
-      "title": "低价车源要看筛选证据",
-      "summary": "展示承运商验证等级、保险安全状态和异常历史，不只报最低价。"
+      "title": "双重经纪风险必须留痕",
+      "summary": "合同限制转包，派车前核验实际承运方，并保存安全筛选证据。"
     }
   ],
   "sources": [
     "FreightWaves"
   ],
   "newsItems": [
+    {
+      "publishedDate": "2026-08-21",
+      "publishedAt": "08.21",
+      "publishedDay": "周五",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "Montgomery判决后两起经纪责任案件继续推进，双重经纪成审查重点",
+      "summary": "Montgomery判决削弱经纪商以联邦法排除州级安全责任诉讼的保护后，涉及J.B. Hunt和AONE的两起案件继续推进。争议集中在经纪商是否忽视承运商事故、检查违规及英语问题，以及明知承运商无经纪授权却继续允许其转包货物，法院均在审查3PL的合理筛选义务。",
+      "industryView": "平台不能把承运商签约后的一切风险都留给车队。卡派应核验实际承运方、FMCSA授权、安全及事故记录，在合同中禁止未经批准的再次转包，并保存每次派车前的复核证据；销售选择低价车源时，也要向客户说明验证等级和责任边界。",
+      "category": "经纪责任",
+      "impact": "风险",
+      "tags": ["经纪责任", "双重经纪", "承运商筛选"],
+      "link": "https://www.freightwaves.com/news/the-list-grows-2-more-cases-proceeding-on-broker-liability"
+    },
+    {
+      "publishedDate": "2026-08-20",
+      "publishedAt": "08.20",
+      "publishedDay": "周四",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "墨西哥对美出口增长35.8%，司机短缺与边境执法支撑北向运价",
+      "summary": "墨西哥6月出口同比增长34.4%，其中非石油产品对美出口增长35.8%，科技和制造业货物继续拉动北向卡车需求。与此同时，B-1签证、英语要求及文件和货物固定审查收紧，合规司机减少；拉雷多货量周降6.7%，但北向重点产区承运商仍保持选择性。",
+      "industryView": "美墨跨境呈现需求强、局部短期放松并存，不能用拉雷多一周回落判断全面降价。卡派应按起运州、口岸和美国续程拆分报价，提前核验司机签证、英语能力、货值重量和绑扎文件；曼萨尼约相关货物还需为港口与公路拥堵预留缓冲。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": ["美墨跨境", "北向运力", "边境合规"],
+      "link": "https://www.freightwaves.com/news/driver-shortages-booming-exports-reshape-us-mexico-freight-market"
+    },
+    {
+      "publishedDate": "2026-08-17",
+      "publishedAt": "08.17",
+      "publishedDay": "周一",
+      "source": "FreightWaves",
+      "score": 99,
+      "title": "Cass整车干线指数同比上涨8.6%，创四年最大涨幅",
+      "summary": "Cass数据显示，7月整车干线指数环比上涨2.3%、同比上涨8.6%，连续第19个月同比增长并创四年来最大升幅；同期货运量同比下降4.8%、经季调环比下降2.2%。合同价大幅重定价、合规运力退出及货主转向高质量承运商，使运价在需求疲弱时仍继续上行。",
+      "industryView": "这说明平台不能把货量下滑直接解释为客户一定能拿到低价，供给收缩正在主导整车价格。卡派应更新合同和现货基准，按线路、车型与服务质量分层报价，对旺季和拒载偏高线路缩短有效期；同时保留铁路联运方案，帮助时效弹性客户控制成本。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": ["Cass指数", "整车运价", "运力收缩"],
+      "link": "https://www.freightwaves.com/news/truckload-linehaul-rates-rip-higher-in-july-cass-says"
+    },
     {
       "publishedDate": "2026-08-10",
       "publishedAt": "08.10",
