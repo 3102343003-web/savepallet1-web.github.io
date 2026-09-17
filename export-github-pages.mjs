@@ -32,8 +32,9 @@ void (async () => {
     const windowDays = Number(data.edition.windowDays) || 30;
     const windowMs = windowDays * 24 * 60 * 60 * 1000;
     const referenceMs = new Date(data.edition.date + "T23:59:59Z").getTime();
+    const itemDate = (item) => item.publishedDate || item.updatedDate || item.effectiveDate || "";
     const newsItems = data.newsItems.filter((item) => {
-      const age = referenceMs - new Date(item.publishedDate + "T23:59:59Z").getTime();
+      const age = referenceMs - new Date(itemDate(item) + "T23:59:59Z").getTime();
       return age >= 0 && age <= windowMs;
     });
     setText("[data-news-edition]", data.edition.weekday + " · " + data.edition.date.replaceAll("-", "."));
@@ -54,7 +55,7 @@ void (async () => {
     const signalLabels = { "市场运价": ["运价与货量", "↗"], "法规合规": ["监管与合规", "§"], "经纪责任": ["经纪责任", "⚖"], "承运商风险": ["承运商风险", "!"], "公司动态": ["企业经营", "▦"], "司机与车队": ["司机与运力", "◇"], "新能源": ["新能源", "⌁"] };
     const trendSignals = Object.keys(signalLabels).map((category) => {
       const items = newsItems.filter((item) => item.category === category);
-      const ages = items.map((item) => Math.floor((referenceMs - new Date(item.publishedDate + "T23:59:59Z").getTime()) / 86400000));
+      const ages = items.map((item) => Math.floor((referenceMs - new Date(itemDate(item) + "T23:59:59Z").getTime()) / 86400000));
       const recent = ages.filter((age) => age >= 0 && age < 14).length;
       const previous = ages.filter((age) => age >= 14 && age < 28).length;
       const direction = recent > previous ? "升温" : recent < previous ? "回落" : "稳定";
@@ -65,18 +66,18 @@ void (async () => {
     const signalGrid = document.querySelector(".signal-grid");
     if (signalGrid) signalGrid.innerHTML = trendSignals.map((signal) => '<article class="signal-card ' + signal.direction + '"><div class="signal-icon">' + signalLabels[signal.category][1] + '</div><div class="signal-main"><span>' + signalLabels[signal.category][0] + '</span><strong>' + signal.direction + '</strong><small>近14日 ' + signal.recent + ' 条 · 前期 ' + signal.previous + ' 条</small></div><div class="signal-score"><span>影响峰值</span><b>' + signal.maxScore + '</b></div></article>').join("");
 
-    const sourceType = (item) => /^https?:\\/\\/[^/]*\\.gov(?:\\/|$)/i.test(item.link) ? "官方监管" : ["FreightWaves", "FleetOwner"].includes(item.source) ? "行业媒体" : item.source === "TLI" ? "产业观察" : "公开信源";
+    const sourceType = (item) => /^https?:\\/\\/[^/]*\\.gov(?:\\/|$)/i.test(item.link) ? "官方监管" : ["Old Dominion", "XPO", "Estes"].includes(item.source) ? "卡司公告" : ["FreightWaves", "FleetOwner"].includes(item.source) ? "行业媒体" : item.source === "TLI" ? "产业观察" : "公开信源";
     const whyItMatters = (item) => {
       const reason = item.whyItMatters || ((item.industryView.match(/^.*?[。！？]/) || [item.industryView])[0]);
       return Array.from(reason).length > 62 ? Array.from(reason).slice(0, 62).join("") + "…" : reason;
     };
     const grouped = new Map();
-    newsItems.forEach((item) => grouped.set(item.publishedDate, [...(grouped.get(item.publishedDate) || []), item]));
+    newsItems.forEach((item) => grouped.set(itemDate(item), [...(grouped.get(itemDate(item)) || []), item]));
     const newsList = document.querySelector("[data-news-list]");
     if (newsList) newsList.innerHTML = [...grouped.entries()].map(([date, items]) => {
       const parts = date.split("-");
       const dateLabel = Number(parts[1]) + "月" + Number(parts[2]) + "日";
-      const rows = items.map((item) => '<article class="news-row" data-category="' + escapeHtml(item.category) + '" data-title="' + escapeHtml(item.title) + '"><div class="news-meta"><span class="impact ' + escapeHtml(item.impact) + '">' + escapeHtml(item.impact) + '</span><span class="source-type">' + sourceType(item) + '</span><span>' + escapeHtml(item.source) + '</span><span>原文发布 ' + escapeHtml(item.publishedAt) + '</span></div><div class="news-title-line"><h3>' + escapeHtml(item.title) + '</h3><div class="score" aria-label="重要性评分 ' + escapeHtml(item.score) + '"><strong>' + escapeHtml(item.score) + '</strong><span>影响</span></div></div><p class="why-line"><strong>为何值得看</strong><span>' + escapeHtml(whyItMatters(item)) + '</span></p><div class="news-copy"><p class="news-summary"><strong>原文摘要</strong><span>' + escapeHtml(item.summary) + '</span></p><p class="industry-view"><strong>行业看法</strong><span>' + escapeHtml(item.industryView) + '</span></p></div><div class="news-footer"><div class="tag-row">' + item.tags.map((tag) => '<span>#' + escapeHtml(tag) + '</span>').join("") + '</div><div class="news-actions">' + (item.relatedSources?.length ? '<span class="related-count">另有 ' + item.relatedSources.length + ' 家信源</span>' : '') + '<button aria-label="收藏资讯">☆</button><a href="' + escapeHtml(item.link) + '" target="_blank" rel="noreferrer">阅读原文 <span>↗</span></a></div></div></article>').join("");
+      const rows = items.map((item) => '<article class="news-row" data-category="' + escapeHtml(item.category) + '" data-title="' + escapeHtml(item.title) + '"><div class="news-meta"><span class="impact ' + escapeHtml(item.impact) + '">' + escapeHtml(item.impact) + '</span><span class="source-type">' + sourceType(item) + '</span><span>' + escapeHtml(item.source) + '</span><span>' + escapeHtml(item.dateType || "原文发布") + ' ' + escapeHtml(item.publishedAt) + '</span></div><div class="news-title-line"><h3>' + escapeHtml(item.title) + '</h3><div class="score" aria-label="重要性评分 ' + escapeHtml(item.score) + '"><strong>' + escapeHtml(item.score) + '</strong><span>影响</span></div></div><p class="why-line"><strong>为何值得看</strong><span>' + escapeHtml(whyItMatters(item)) + '</span></p><div class="news-copy"><p class="news-summary"><strong>原文摘要</strong><span>' + escapeHtml(item.summary) + '</span></p><p class="industry-view"><strong>行业看法</strong><span>' + escapeHtml(item.industryView) + '</span></p></div><div class="news-footer"><div class="tag-row">' + item.tags.map((tag) => '<span>#' + escapeHtml(tag) + '</span>').join("") + '</div><div class="news-actions">' + (item.relatedSources?.length ? '<span class="related-count">另有 ' + item.relatedSources.length + ' 家信源</span>' : '') + '<button aria-label="收藏资讯">☆</button><a href="' + escapeHtml(item.link) + '" target="_blank" rel="noreferrer">阅读原文 <span>↗</span></a></div></div></article>').join("");
       return '<details class="date-group" open><summary><div><time datetime="' + escapeHtml(date) + '">' + dateLabel + '</time><span>' + escapeHtml(items[0].publishedDay) + '</span></div><div><b>' + items.length + '</b> 条精选 <i>⌄</i></div></summary><div class="date-items">' + rows + '</div></details>';
     }).join("");
     const salesTips = document.querySelector("[data-news-sales-tips]");

@@ -1,66 +1,147 @@
 {
   "schemaVersion": 1,
   "edition": {
-    "date": "2026-08-24",
-    "weekday": "MONDAY",
-    "issue": "015",
-    "updatedAt": "08.24",
+    "date": "2026-09-17",
+    "weekday": "THURSDAY",
+    "issue": "016",
+    "updatedAt": "09.17",
     "windowDays": 90,
-    "nextUpdate": "周二 10:00"
+    "nextUpdate": "周五 10:00"
   },
   "brief": {
-    "title": "货量偏弱但整车运价继续上行，美墨合规运力与经纪责任同步收紧。",
-    "summary": "截至8月24日，Cass整车干线指数同比上涨8.6%、创四年最大涨幅，即使货量走弱也未阻止合同价上行；墨西哥对美出口增长带动北向需求，但司机与边境合规限制车源；Montgomery判决后两起经纪责任案件继续推进，平台需同时缩短报价有效期并加强承运商筛选。",
+    "title": "LTL燃油附加费上调，量弱价强与CDL培训执法同时影响可用运力。",
+    "summary": "截至9月17日，Old Dominion最新页面显示LTL燃油附加费将于9月23日至29日升至53.32%；其8月日均票数同比下降2.4%，但三季度截至8月底每百磅收入同比增长11.3%。FMCSA同时扩大ELDT培训机构和第三方CDL考官执法，平台需拆分核算附加费并升级司机资质复核。",
     "marketTemperature": "偏紧",
-    "readingMinutes": 10
+    "readingMinutes": 8
   },
   "topStories": [
     {
       "rank": "01",
       "category": "市场运价",
-      "title": "Cass整车干线指数同比涨8.6%，创四年最大涨幅",
-      "summary": "7月货运量同比下降4.8%，但干线费率环比涨2.3%，供给收缩正在压过需求疲软。",
-      "signal": "缩短时效",
-      "signalText": "合同与现货报价同步更新，紧张线路缩短价格有效期",
+      "title": "Old Dominion LTL燃油附加费将升至53.32%",
+      "summary": "9月14日全国柴油均价为每加仑6.285美元，新费率适用于9月23日至29日。",
+      "signal": "拆分核价",
+      "signalText": "按承运商、服务类型和生效窗口单独核算燃油附加费",
       "tone": "orange"
     },
     {
       "rank": "02",
       "category": "市场运价",
-      "title": "墨西哥对美出口增长35.8%，北向合规车源继续吃紧",
-      "summary": "制造业与科技货推动北向需求，但B-1签证、英语执法和边境文件审查限制运力。",
-      "signal": "预留缓冲",
-      "signalText": "美墨北向线提前锁车，并为清关、换司机和港口拥堵留出时间",
+      "title": "Old Dominion 8月票数下降，但单位收入继续上升",
+      "summary": "8月日均票数同比下降2.4%，三季度截至8月底每百磅收入同比增长11.3%。",
+      "signal": "保留比价",
+      "signalText": "量弱价强时继续保留多家LTL承运商报价和时效对照",
       "tone": "blue"
     },
     {
       "rank": "03",
-      "category": "经纪责任",
-      "title": "Montgomery判决后两起经纪责任案件继续推进",
-      "summary": "J.B. Hunt与AONE案件聚焦安全记录、双重经纪及3PL是否履行合理筛选义务。",
-      "signal": "留存证据",
-      "signalText": "记录承运商安全、授权、转包限制与派车前复核过程",
+      "category": "法规合规",
+      "title": "FMCSA扩大ELDT培训机构与CDL考官执法",
+      "summary": "110多家培训机构被紧急移除，160多家收到拟移除通知，全国第三方考官审计启动。",
+      "signal": "升级复核",
+      "signalText": "交叉核验培训来源、CDL考试记录、英语能力和实际雇佣主体",
       "tone": "violet"
     }
   ],
   "salesTips": [
     {
-      "title": "货量弱不等于运价会降",
-      "summary": "合同价已创四年最大同比涨幅，重点线路要缩短报价有效期。"
+      "title": "燃油附加费按日期拆分",
+      "summary": "跨周报价同时注明当前费率、下一生效窗口和线路额外百分点。"
     },
     {
-      "title": "美墨北向提前锁合规车源",
-      "summary": "核验B-1签证、英语能力和申报文件，并预留清关及港口拥堵时间。"
+      "title": "LTL量价不要混为一谈",
+      "summary": "票数下降不代表报价下调，单位收入上升时继续保留多承运商比价。"
     },
     {
-      "title": "双重经纪风险必须留痕",
-      "summary": "合同限制转包，派车前核验实际承运方，并保存安全筛选证据。"
+      "title": "CDL来源异常升级人工核验",
+      "summary": "培训机构被移除或拟移除时，补查考试、英语、体检和雇佣记录。"
     }
   ],
   "sources": [
-    "FreightWaves"
+    "FreightWaves",
+    "XPO News",
+    "Old Dominion News / Fuel",
+    "Estes News",
+    "FMCSA News / Guidance",
+    "DOT Newsroom",
+    "Federal Register · FMCSA",
+    "FleetOwner",
+    "TLI"
   ],
   "newsItems": [
+    {
+      "publisher": "Old Dominion Freight Line",
+      "originalTitle": "Fuel Surcharge",
+      "publishedDate": "",
+      "updatedDate": "2026-09-14",
+      "effectiveDate": "2026-09-16",
+      "effectiveUntil": "2026-09-29",
+      "dateType": "页面更新",
+      "publishedAt": "09.14",
+      "publishedDay": "周一",
+      "verifiedAt": "2026-09-17",
+      "infoCategory": "燃油附加费",
+      "scope": "Old Dominion美国LTL服务及ODFL 705 Item 130所列集装箱服务；部分起讫地可能另加2个百分点",
+      "attachmentOrRuleNumber": "ODFL 128-CC；ODFL 705 Item 130",
+      "status": "有效；LTL新费率将于9月23日生效",
+      "source": "Old Dominion",
+      "score": 99,
+      "title": "Old Dominion公布9月23日起LTL燃油附加费53.32%",
+      "summary": "Old Dominion官网显示，9月14日美国全国柴油均价为每加仑6.285美元；其LTL燃油附加费报价将于9月23日至29日升至53.32%，集装箱附加费则在9月16日至22日按82.3%执行。ODFL 128-CC说明费率按EIA全国柴油指数每周调整，部分起讫地还可能另加2个百分点。",
+      "industryView": "这不是全行业统一费率，只适用于Old Dominion相应服务。卡派在比较LTL与集装箱方案时，应把基础运价、附加费适用日期和线路额外百分点拆开计算；对跨周报价标注生效窗口，避免用旧费率锁单后出现补差。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": ["Old Dominion", "燃油附加费", "LTL"],
+      "link": "https://www.odfl.com/us/en/resources/fuel-surcharge.html"
+    },
+    {
+      "publisher": "Old Dominion Freight Line",
+      "originalTitle": "Old Dominion Freight Line Provides Update for Third Quarter 2026",
+      "publishedDate": "2026-09-03",
+      "updatedDate": "",
+      "effectiveDate": "",
+      "dateType": "原文发布",
+      "publishedAt": "09.03",
+      "publishedDay": "周四",
+      "verifiedAt": "2026-09-17",
+      "infoCategory": "经营数据",
+      "scope": "Old Dominion美国LTL网络及2026年第三季度截至8月底的经营数据",
+      "attachmentOrRuleNumber": "无",
+      "status": "已发布",
+      "source": "Old Dominion",
+      "score": 97,
+      "title": "Old Dominion 8月LTL票数降2.4%，单位收入仍上升",
+      "summary": "Old Dominion称，2026年8月LTL日均收入同比增长12.4%，日均吨位下降0.9%，日均票数下降2.4%；三季度截至8月底，每百磅收入同比增长11.3%，剔除燃油附加费后仍增长4.8%。公司表示需求趋势总体稳定，并称网络具备支持货量增长的容量。",
+      "industryView": "单一承运商数据不能代表全行业涨价，但量弱价强显示头部LTL车队仍在执行收益管理。卡派可据此复核Old Dominion相关线路的基准价与附加费，把低货量和高单价分开解释；对同线路继续保留其他LTL承运商比价，避免将公司口径直接外推为全市场结论。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": ["Old Dominion", "LTL", "经营数据"],
+      "link": "https://ir.odfl.com/news-events/press-releases/detail/348/old-dominion-freight-line-provides-update-for-third-quarter"
+    },
+    {
+      "publisher": "Federal Motor Carrier Safety Administration",
+      "originalTitle": "U.S. Transportation Secretary Duffy, U.S. Homeland Security Secretary Mullin, White House Launch Nationwide Crackdown on Trucking Fraud",
+      "publishedDate": "2026-08-31",
+      "updatedDate": "",
+      "effectiveDate": "",
+      "dateType": "原文发布",
+      "publishedAt": "08.31",
+      "publishedDay": "周一",
+      "verifiedAt": "2026-09-17",
+      "infoCategory": "执法行动",
+      "scope": "全美ELDT培训机构、第三方CDL技能考官及州级CDL项目",
+      "attachmentOrRuleNumber": "无单独规则编号；Joint Task Force Crossroads of America",
+      "status": "正在执行",
+      "source": "FMCSA / DOT",
+      "score": 99,
+      "title": "FMCSA扩大CDL培训与考试执法，紧急移除110多家机构",
+      "summary": "FMCSA与DOT、DHS和司法部门启动跨州卡车欺诈执法行动。FMCSA宣布紧急移除110多家与英语能力不合格司机相关的ELDT培训机构，并对160多家机构发出拟移除通知，同时启动全国第三方CDL技能考官审计；相关联合行动还覆盖23州、200多所驾驶学校。",
+      "industryView": "这是一组培训、测试和执法行动，不等于所有相关毕业司机或承运商自动停运。卡派应把培训机构、CDL签发与考试记录、英语能力、体检和实际雇佣主体纳入复核；发现司机来自被移除或拟移除机构时升级人工核验，并为高时效订单准备替代司机和车队。",
+      "category": "法规合规",
+      "impact": "风险",
+      "tags": ["FMCSA", "ELDT", "CDL执法"],
+      "link": "https://www.fmcsa.dot.gov/newsroom/us-transportation-secretary-duffy-us-homeland-security-secretary-mullin-white-house-fraud"
+    },
     {
       "publishedDate": "2026-08-21",
       "publishedAt": "08.21",

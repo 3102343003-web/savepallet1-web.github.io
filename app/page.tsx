@@ -7,6 +7,9 @@ type RelatedSource = { name: string; link: string };
 
 type NewsItem = {
   publishedDate: string;
+  updatedDate?: string;
+  effectiveDate?: string;
+  dateType?: string;
   publishedAt: string;
   publishedDay: string;
   source: string;
@@ -58,8 +61,10 @@ const signalMeta: Record<string, { short: string; icon: string }> = {
   新能源: { short: "新能源", icon: "⌁" },
 };
 
-const isWithinDataWindow = (publishedDate: string, referenceDate: string, windowDays: number) => {
-  const publishedAt = new Date(`${publishedDate}T23:59:59Z`).getTime();
+const getItemDate = (item: NewsItem) => item.publishedDate || item.updatedDate || item.effectiveDate || "";
+
+const isWithinDataWindow = (itemDate: string, referenceDate: string, windowDays: number) => {
+  const publishedAt = new Date(`${itemDate}T23:59:59Z`).getTime();
   const referenceAt = new Date(`${referenceDate}T23:59:59Z`).getTime();
   const age = referenceAt - publishedAt;
   return age >= 0 && age <= windowDays * 24 * 60 * 60 * 1000;
@@ -74,6 +79,7 @@ const getWhyItMatters = (item: NewsItem) => {
 
 const getSourceType = (item: NewsItem) => {
   if (/^https?:\/\/[^/]*\.gov(?:\/|$)/i.test(item.link)) return "官方监管";
+  if (["Old Dominion", "XPO", "Estes"].includes(item.source)) return "卡司公告";
   if (["FreightWaves", "FleetOwner"].includes(item.source)) return "行业媒体";
   if (item.source === "TLI") return "产业观察";
   return "公开信源";
@@ -93,7 +99,7 @@ export default function Home() {
   const searchRef = useRef<HTMLInputElement>(null);
 
   const windowNews = useMemo(
-    () => content.newsItems.filter((item) => isWithinDataWindow(item.publishedDate, content.edition.date, content.edition.windowDays)),
+    () => content.newsItems.filter((item) => isWithinDataWindow(getItemDate(item), content.edition.date, content.edition.windowDays)),
     [content.edition.date, content.edition.windowDays, content.newsItems],
   );
 
@@ -109,7 +115,10 @@ export default function Home() {
 
   const groupedNews = useMemo(() => {
     const groups = new Map<string, NewsItem[]>();
-    visibleNews.forEach((item) => groups.set(item.publishedDate, [...(groups.get(item.publishedDate) ?? []), item]));
+    visibleNews.forEach((item) => {
+      const itemDate = getItemDate(item);
+      groups.set(itemDate, [...(groups.get(itemDate) ?? []), item]);
+    });
     return [...groups.entries()];
   }, [visibleNews]);
 
@@ -118,7 +127,7 @@ export default function Home() {
     return Object.keys(signalMeta)
       .map((category) => {
         const items = windowNews.filter((item) => item.category === category);
-        const ages = items.map((item) => Math.floor((referenceAt - new Date(`${item.publishedDate}T23:59:59Z`).getTime()) / 86400000));
+        const ages = items.map((item) => Math.floor((referenceAt - new Date(`${getItemDate(item)}T23:59:59Z`).getTime()) / 86400000));
         const recent = ages.filter((age) => age >= 0 && age < 14).length;
         const previous = ages.filter((age) => age >= 14 && age < 28).length;
         const direction = recent > previous ? "升温" : recent < previous ? "回落" : "稳定";
@@ -237,13 +246,13 @@ export default function Home() {
             </section>
 
             <section className="section-block" id="news">
-              <div className="section-heading news-heading"><div><span className="section-index">03</span><div><h2>{savedOnly ? "我的收藏" : "最新精选"}</h2><p>{savedOnly ? `已收藏 ${bookmarked.length} 条资讯` : "按原文发布日期归档，同日资讯集中浏览"}</p></div><span className="range-chip">仅近 {content.edition.windowDays} 天</span></div><a href="https://www.freightwaves.com/news/category/news/trucking" target="_blank" rel="noreferrer">FreightWaves 主来源 ↗</a></div>
+              <div className="section-heading news-heading"><div><span className="section-index">03</span><div><h2>{savedOnly ? "我的收藏" : "最新精选"}</h2><p>{savedOnly ? `已收藏 ${bookmarked.length} 条资讯` : "按原文发布或页面更新日期归档，同日资讯集中浏览"}</p></div><span className="range-chip">仅近 {content.edition.windowDays} 天</span></div><a href="https://www.freightwaves.com/news/category/news/trucking" target="_blank" rel="noreferrer">FreightWaves 综合源 ↗</a></div>
               <div className="filter-row" id="topics">{filters.map((filter) => { const count = filter === "全部" ? windowNews.length : windowNews.filter((item) => item.category === filter).length; return <button data-filter={filter} className={filter === activeFilter && !savedOnly ? "active" : ""} onClick={() => { setActiveFilter(filter); setSavedOnly(false); }} key={filter}>{filter}<b>{count}</b></button>; })}</div>
               <div className="news-list" data-news-list>
                 {groupedNews.map(([date, items]) => <details className="date-group" open key={date}>
                   <summary><div><time dateTime={date}>{formatDateLabel(date)}</time><span>{items[0].publishedDay}</span></div><div><b>{items.length}</b> 条精选 <i>⌄</i></div></summary>
                   <div className="date-items">{items.map((item) => <article className="news-row" data-category={item.category} data-title={item.title} key={item.title}>
-                    <div className="news-meta"><span className={`impact ${item.impact}`}>{item.impact}</span><span className="source-type">{getSourceType(item)}</span><span>{item.source}</span><span>原文发布 {item.publishedAt}</span></div>
+                    <div className="news-meta"><span className={`impact ${item.impact}`}>{item.impact}</span><span className="source-type">{getSourceType(item)}</span><span>{item.source}</span><span>{item.dateType ?? "原文发布"} {item.publishedAt}</span></div>
                     <div className="news-title-line"><h3>{item.title}</h3><div className="score" aria-label={`重要性评分 ${item.score}`}><strong>{item.score}</strong><span>影响</span></div></div>
                     <p className="why-line"><strong>为何值得看</strong><span>{getWhyItMatters(item)}</span></p>
                     <div className="news-copy"><p className="news-summary"><strong>原文摘要</strong><span>{item.summary}</span></p><p className="industry-view"><strong>行业看法</strong><span>{item.industryView}</span></p></div>

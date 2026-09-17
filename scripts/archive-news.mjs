@@ -14,15 +14,16 @@ try {
 const cutoff = new Date(`${current.edition.date}T23:59:59Z`);
 cutoff.setUTCDate(cutoff.getUTCDate() - 365);
 const merged = new Map();
+const itemDate = (item) => item.publishedDate || item.updatedDate || item.effectiveDate || "";
 for (const item of [...current.newsItems, ...(history.newsItems ?? [])]) {
-  if (new Date(`${item.publishedDate}T23:59:59Z`) >= cutoff && !merged.has(item.link)) merged.set(item.link, item);
+  if (new Date(`${itemDate(item)}T23:59:59Z`) >= cutoff && !merged.has(item.link)) merged.set(item.link, item);
 }
 
 history = {
   schemaVersion: 1,
   retainedDays: 365,
   updatedAt: current.edition.date,
-  newsItems: [...merged.values()].sort((a, b) => b.publishedDate.localeCompare(a.publishedDate)),
+  newsItems: [...merged.values()].sort((a, b) => itemDate(b).localeCompare(itemDate(a))),
 };
 await writeFile(historyUrl, `${JSON.stringify(history, null, 2)}\n`, "utf8");
 console.log(`历史库已保留 ${history.newsItems.length} 条资讯。`);

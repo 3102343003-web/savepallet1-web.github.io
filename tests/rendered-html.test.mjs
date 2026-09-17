@@ -36,7 +36,9 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /小红书(?:<!-- -->)? ↗/);
   assert.match(html, /公众号(?:<!-- -->)? · 待补/);
   assert.match(html, /data-news-edition/);
-  assert.match(html, /货量偏弱但整车运价继续上行/);
+  assert.match(html, /LTL燃油附加费上调/);
+  assert.match(html, /Old Dominion公布9月23日起LTL燃油附加费53\.32%/);
+  assert.match(html, /FMCSA扩大CDL培训与考试执法/);
   assert.match(html, /c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic/);
   assert.match(html, /property="og:image" content="http:\/\/localhost\/og\.png"/);
   assert.match(html, /J\.B\. Hunt二季度业绩超预期/);
@@ -77,7 +79,7 @@ test("GitHub Pages export loads the lightweight news data file", async () => {
   assert.match(html, /data-filter="市场运价"/);
   assert.match(html, /topicButtons/);
   assert.match(html, /data-news-edition/);
-  assert.match(html, /货量偏弱但整车运价继续上行/);
+  assert.match(html, /LTL燃油附加费上调/);
   assert.match(html, /c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic/);
   assert.match(html, /property="og:image" content="public\/og\.png"/);
   assert.match(html, /j-b-hunts-shares-up-9-on-q2-earnings-beat/);
@@ -85,7 +87,7 @@ test("GitHub Pages export loads the lightweight news data file", async () => {
   assert.match(html, /truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
   assert.match(html, /data\/news\.json/);
   assert.match(html, /data-news-list/);
-  assert.match(html, /referenceMs - new Date\(item\.publishedDate/);
+  assert.match(html, /referenceMs - new Date\(itemDate\(item\)/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
   assert.doesNotMatch(html, /href="\.\/app\/globals\.css"/);
 });

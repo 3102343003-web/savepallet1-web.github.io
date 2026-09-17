@@ -13,9 +13,11 @@ const links = new Set();
 let previousDate = "9999-12-31";
 for (const [index, item] of (data.newsItems ?? []).entries()) {
   const label = `第 ${index + 1} 条资讯`;
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(item.publishedDate ?? "")) errors.push(`${label}发布日期格式错误`);
-  if (item.publishedDate > previousDate) errors.push(`${label}未按发布日期倒序排列`);
-  previousDate = item.publishedDate;
+  const itemDate = item.publishedDate || item.updatedDate || item.effectiveDate || "";
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(itemDate)) errors.push(`${label}缺少有效的发布、更新或生效日期`);
+  if (itemDate > previousDate) errors.push(`${label}未按展示日期倒序排列`);
+  previousDate = itemDate;
+  if (!item.publishedDate && !item.dateType) errors.push(`${label}发布日期为空时必须标明日期类型`);
   if (!/^https?:\/\//.test(item.link ?? "")) errors.push(`${label}缺少具体原文链接`);
   if (/\/news\/category\//.test(item.link ?? "")) errors.push(`${label}使用了栏目链接而非具体原文链接`);
   if (links.has(item.link)) errors.push(`${label}原文链接重复`);
@@ -23,6 +25,10 @@ for (const [index, item] of (data.newsItems ?? []).entries()) {
   if (!item.title || !item.summary || !item.industryView) errors.push(`${label}缺少标题、摘要或行业看法`);
   if (!Array.isArray(item.tags) || item.tags.length === 0) errors.push(`${label}缺少标签`);
   if (!Number.isInteger(item.score) || item.score < 0 || item.score > 100) errors.push(`${label}重要性评分无效`);
+  if (item.publisher) {
+    const requiredFields = ["originalTitle", "verifiedAt", "infoCategory", "scope", "attachmentOrRuleNumber", "status"];
+    for (const field of requiredFields) if (!item[field]) errors.push(`${label}缺少扩展字段 ${field}`);
+  }
 }
 
 if (errors.length) {
