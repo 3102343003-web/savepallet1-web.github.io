@@ -36,7 +36,10 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /小红书(?:<!-- -->)? ↗/);
   assert.match(html, /公众号(?:<!-- -->)? · 待补/);
   assert.match(html, /data-news-edition/);
-  assert.match(html, /LTL燃油附加费上调/);
+  assert.match(html, /燃油运输HOS临时放宽/);
+  assert.match(html, /FMCSA对汽柴油运输实施三个月HOS豁免/);
+  assert.match(html, /Cass整车干线运价同比涨11\.3%/);
+  assert.match(html, /XPO 8月LTL日均吨位增3\.7%/);
   assert.match(html, /Old Dominion公布9月23日起LTL燃油附加费53\.32%/);
   assert.match(html, /FMCSA扩大CDL培训与考试执法/);
   assert.match(html, /c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic/);
@@ -79,7 +82,9 @@ test("GitHub Pages export loads the lightweight news data file", async () => {
   assert.match(html, /data-filter="市场运价"/);
   assert.match(html, /topicButtons/);
   assert.match(html, /data-news-edition/);
-  assert.match(html, /LTL燃油附加费上调/);
+  assert.match(html, /燃油运输HOS临时放宽/);
+  assert.match(html, /cass-tl-rates-jump-11-in-august-freight-shipments-turn-positive/);
+  assert.match(html, /xpo-provides-north-american-ltl-operating-data-for-august-2026/);
   assert.match(html, /c-h-robinson-earnings-call-shifts-to-nuclear-verdict-as-key-topic/);
   assert.match(html, /property="og:image" content="public\/og\.png"/);
   assert.match(html, /j-b-hunts-shares-up-9-on-q2-earnings-beat/);

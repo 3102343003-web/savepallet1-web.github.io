@@ -4,6 +4,63 @@
   "updatedAt": "2026-09-17",
   "newsItems": [
     {
+      "publisher": "Federal Motor Carrier Safety Administration",
+      "originalTitle": "Hours of Service Waiver for the Transportation of Gasoline and Diesel Fuel",
+      "publishedDate": "2026-09-16",
+      "updatedDate": "2026-09-16",
+      "effectiveDate": "2026-09-16",
+      "effectiveUntil": "2026-12-16",
+      "dateType": "生效日期",
+      "publishedAt": "09.16",
+      "publishedDay": "周三",
+      "verifiedAt": "2026-09-17",
+      "infoCategory": "豁免",
+      "scope": "美国州际汽油和柴油运输的汽车承运商及商用司机；排除有条件安全评级、有效停运令或不具备有效CDL及所需签注者",
+      "attachmentOrRuleNumber": "49 CFR 395.3；FMCSA HOS Waiver issued September 16, 2026",
+      "status": "有效；2026年12月16日23:59到期",
+      "source": "FMCSA",
+      "score": 100,
+      "title": "FMCSA对汽柴油运输实施三个月HOS豁免",
+      "summary": "FMCSA豁免汽油和柴油州际运输在49 CFR 395.3下的部分工时限制，有效期为9月16日至12月16日。司机每24小时驾驶不得超过16小时，并须在卧铺连续休息至少6小时；无卧铺时须连续离岗8小时，转回常规运营达到14小时还需休息10小时。",
+      "industryView": "这不是全行业HOS放宽，只适用于汽柴油运输且条件严格。卡派如撮合燃油运输，应核验承运商安全评级、司机CDL及签注和停运状态，保存豁免副本与休息记录；涉及事故还要提醒承运商在两个工作日内向FMCSA报告，普通货物线路不得套用。",
+      "category": "法规合规",
+      "impact": "关注",
+      "tags": [
+        "FMCSA",
+        "HOS豁免",
+        "燃油运输"
+      ],
+      "link": "https://www.fmcsa.dot.gov/mission/hours-service-waiver-transportation-gasoline-and-diesel-fuel"
+    },
+    {
+      "publisher": "FreightWaves",
+      "originalTitle": "Cass: TL rates jump 11% in August, freight shipments turn positive",
+      "publishedDate": "2026-09-14",
+      "updatedDate": "",
+      "effectiveDate": "",
+      "dateType": "原文发布",
+      "publishedAt": "09.14",
+      "publishedDay": "周一",
+      "verifiedAt": "2026-09-17",
+      "infoCategory": "市场运价与货量",
+      "scope": "Cass Freight Index覆盖的美国国内货运支出、货运量及以整车为主的干线运价",
+      "attachmentOrRuleNumber": "Cass Freight Index, August 2026",
+      "status": "已发布",
+      "source": "FreightWaves",
+      "score": 100,
+      "title": "Cass整车干线运价同比涨11.3%，货运量结束42个月下降",
+      "summary": "Cass 8月整车干线指数剔除燃油和附加费后同比上涨11.3%、环比上涨0.7%，连续20个月同比上升，并创2022年6月以来最大涨幅。货运量同比增长2.1%，结束连续42个月同比下降；货运支出同比增长18.7%，但报告对需求前景仍保持谨慎。",
+      "industryView": "货量刚转正而合同运价继续上调，说明供给收缩和成本重定价仍在主导市场。卡派应按线路、车型和服务等级更新整车基准，缩短波动线路报价有效期，并保留现货、合同和铁路联运对照；同时不要把单月转正解读为需求已全面复苏。",
+      "category": "市场运价",
+      "impact": "风险",
+      "tags": [
+        "Cass指数",
+        "整车运价",
+        "货运量"
+      ],
+      "link": "https://www.freightwaves.com/news/cass-tl-rates-jump-11-in-august-freight-shipments-turn-positive"
+    },
+    {
       "publisher": "Old Dominion Freight Line",
       "originalTitle": "Fuel Surcharge",
       "publishedDate": "",
@@ -31,6 +88,34 @@
         "LTL"
       ],
       "link": "https://www.odfl.com/us/en/resources/fuel-surcharge.html"
+    },
+    {
+      "publisher": "XPO",
+      "originalTitle": "XPO Provides North American LTL Operating Data for August 2026",
+      "publishedDate": "2026-09-03",
+      "updatedDate": "",
+      "effectiveDate": "",
+      "dateType": "原文发布",
+      "publishedAt": "09.03",
+      "publishedDay": "周四",
+      "verifiedAt": "2026-09-17",
+      "infoCategory": "经营数据",
+      "scope": "XPO北美零担运输网络2026年8月的初步日均吨位、票数和单票重量数据",
+      "attachmentOrRuleNumber": "无",
+      "status": "初步数据；实际结果可能调整",
+      "source": "XPO",
+      "score": 98,
+      "title": "XPO 8月LTL日均吨位增3.7%，票数增5.7%",
+      "summary": "XPO披露的初步数据称，2026年8月北美LTL日均吨位同比增长3.7%，其中日均票数增长5.7%，单票重量下降1.8%。公司明确表示这些数字属于初步经营数据，最终实际结果可能与当前披露存在差异。",
+      "industryView": "XPO票数增长快于吨位，显示更多但更轻的单票结构，不能直接推断所有LTL线路都同步走强。卡派可结合Old Dominion量价数据，按承运商、线路、单票重量和附加费分层比价；对XPO相关容量判断保留初步数据标记，并等待正式业绩验证。",
+      "category": "市场运价",
+      "impact": "关注",
+      "tags": [
+        "XPO",
+        "LTL",
+        "经营数据"
+      ],
+      "link": "https://news.xpo.com/3168/xpo-provides-north-american-ltl-operating-data-for-august-2026/"
     },
     {
       "publisher": "Old Dominion Freight Line",
