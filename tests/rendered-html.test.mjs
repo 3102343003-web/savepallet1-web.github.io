@@ -21,6 +21,11 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.match(html, /<title>卡卡省-美国卡派资讯&amp;竞对动态监控网站<\/title>/i);
   assert.match(html, /今日热点 TOP 3/);
   assert.match(html, /竞对动态监控/);
+  assert.match(html, /全美载货卡司规模 TOP50/);
+  assert.match(html, /FMCSA 官方底表/);
+  assert.match(html, /USDOT\s*(?:<!-- -->)?86876/);
+  assert.match(html, /FEDEX EXPRESS/);
+  assert.match(html, /data-carrier-row/);
   assert.match(html, /FreightWaves/);
   assert.match(html, /原文发布/);
   assert.match(html, /class="range-chip">仅近/);
@@ -56,12 +61,13 @@ test("server-renders the Kaka Province intelligence dashboard", async () => {
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
-test("starter preview dependencies are removed and news uses a separate data file", async () => {
-  const [page, layout, packageJson, newsData] = await Promise.all([
+test("starter preview dependencies are removed and structured data uses separate files", async () => {
+  const [page, layout, packageJson, newsData, carrierData] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
     readFile(new URL("../public/data/news.json", import.meta.url), "utf8"),
+    readFile(new URL("../public/data/carriers.json", import.meta.url), "utf8"),
   ]);
   assert.match(page, /卡卡省/);
   assert.match(layout, /lang="zh-CN"/);
@@ -70,6 +76,9 @@ test("starter preview dependencies are removed and news uses a separate data fil
   assert.match(page, /fetch\("\.\/data\/news\.json"/);
   assert.match(newsData, /"schemaVersion": 1/);
   assert.match(newsData, /"newsItems": \[/);
+  assert.match(page, /initialCarrierData/);
+  assert.match(carrierData, /"rankedCount": 50/);
+  assert.match(carrierData, /"officialDatasetUrl"/);
   assert.doesNotMatch(page, /link:\s*"https:\/\/www\.freightwaves\.com\/news\/category\//);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
@@ -92,6 +101,8 @@ test("GitHub Pages export loads the lightweight news data file", async () => {
   assert.match(html, /truckload-spot-rates-fall-as-flatbed-rates-post-second-largest-weekly-decline/);
   assert.match(html, /data\/news\.json/);
   assert.match(html, /data-news-list/);
+  assert.match(html, /data-carrier-row/);
+  assert.match(html, /applyCarrierSearch/);
   assert.match(html, /referenceMs - new Date\(itemDate\(item\)/);
   assert.doesNotMatch(html, /__VINEXT|\/assets\//);
   assert.doesNotMatch(html, /href="\.\/app\/globals\.css"/);

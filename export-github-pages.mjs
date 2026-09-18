@@ -161,6 +161,19 @@ void (async () => {
     const button = row.querySelector(".news-actions button");
     if (button && savedTitles.includes(row.dataset.title)) { button.classList.add("saved"); button.textContent = "★"; }
   });
+  const carrierInput = document.querySelector("[data-carrier-search]");
+  const carrierCounter = document.querySelector(".ranking-toolbar > b");
+  const applyCarrierSearch = () => {
+    const keyword = (carrierInput?.value || "").trim().toLowerCase();
+    let visible = 0;
+    document.querySelectorAll("[data-carrier-row]").forEach((row) => {
+      const matches = !keyword || (row.dataset.carrierSearchText || "").toLowerCase().includes(keyword);
+      row.style.display = matches ? "" : "none";
+      if (matches) visible += 1;
+    });
+    if (carrierCounter) carrierCounter.textContent = visible + " / 50";
+  };
+  carrierInput?.addEventListener("input", applyCarrierSearch);
 })();
 </script>`;
 

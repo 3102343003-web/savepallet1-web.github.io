@@ -13,7 +13,9 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "news:validate": "node scripts/validate-news-data.mjs",
-    "news:archive": "node scripts/archive-news.mjs"
+    "news:archive": "node scripts/archive-news.mjs",
+    "carriers:fetch": "node scripts/fetch-carrier-ranking.mjs",
+    "carriers:validate": "node scripts/validate-carrier-data.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import initialNewsData from "../public/data/news.json";
+import initialCarrierData from "../public/data/carriers.json";
 
 type RelatedSource = { name: string; link: string };
 
@@ -36,6 +37,33 @@ type NewsData = {
 };
 
 type CompetitorChannel = { label: string; href?: string };
+
+type Carrier = {
+  rank: number;
+  legalName: string;
+  dbaName: string;
+  dotNumber: string;
+  mcNumber: string;
+  city: string;
+  state: string;
+  powerUnits: number;
+  totalDrivers: number;
+  mcs150Date: string;
+  classification: string;
+  hazmat: boolean;
+  cargoTypes: string[];
+  profile: string;
+  saferUrl: string;
+};
+
+type CarrierData = {
+  edition: { title: string; snapshotDate: string; sourceUpdatedAt: string; candidateCount: number; rankedCount: number; rankMetric: string; scope: string };
+  methodology: string[];
+  source: { officialDatasetUrl: string; officialProgramUrl: string; saferUrl: string; retrievalNote: string };
+  carriers: Carrier[];
+};
+
+const carrierData = initialCarrierData as CarrierData;
 
 const competitors = [
   { name: "省多多", level: "A级", initials: "省", color: "#f97316", wechatName: "省多多北美卡车平台", update: "小红书、抖音主页已接入；公众号与视频号入口待补充", insight: "销售可直接进入已核验的竞对主页；公开内容仍按近 30 天范围监控。", channels: [{ label: "公众号" }, { label: "官网", href: "http://sddltl.com/Default.aspx" }, { label: "小红书", href: "https://xhslink.com/m/75sNtVt2wwW" }, { label: "视频号" }, { label: "抖音", href: "https://v.douyin.com/xEe-XTIB5VA" }] satisfies CompetitorChannel[], link: "http://sddltl.com/Default.aspx" },
@@ -96,6 +124,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [bookmarked, setBookmarked] = useState<string[]>([]);
   const [savedOnly, setSavedOnly] = useState(false);
+  const [carrierQuery, setCarrierQuery] = useState("");
   const searchRef = useRef<HTMLInputElement>(null);
 
   const windowNews = useMemo(
@@ -121,6 +150,12 @@ export default function Home() {
     });
     return [...groups.entries()];
   }, [visibleNews]);
+
+  const visibleCarriers = useMemo(() => {
+    const keyword = carrierQuery.trim().toLowerCase();
+    if (!keyword) return carrierData.carriers;
+    return carrierData.carriers.filter((carrier) => `${carrier.legalName}${carrier.dbaName}${carrier.dotNumber}${carrier.mcNumber}${carrier.city}${carrier.state}${carrier.cargoTypes.join("")}`.toLowerCase().includes(keyword));
+  }, [carrierQuery]);
 
   const trendSignals = useMemo(() => {
     const referenceAt = new Date(`${content.edition.date}T23:59:59Z`).getTime();
@@ -206,6 +241,7 @@ export default function Home() {
         <nav className="nav-list" aria-label="主导航">
           <a className="nav-item active" href="#today"><span>⌂</span>今日总览</a>
           <a className="nav-item" href="#signals"><span>⌁</span>影响趋势</a>
+          <a className="nav-item" href="#carrier-ranking"><span>▥</span>卡司 TOP50</a>
           <a className="nav-item" href="#news"><span>▤</span>最新动态</a>
           <a className="nav-item" href="#sales"><span>◎</span>销售行动</a>
           <a className="nav-item" href="#competitors"><span>◈</span>竞对监控</a>
@@ -245,8 +281,32 @@ export default function Home() {
               <div className="signal-grid">{trendSignals.map((signal) => { const meta = signalMeta[signal.category]; return <article className={`signal-card ${signal.direction}`} key={signal.category}><div className="signal-icon">{meta.icon}</div><div className="signal-main"><span>{meta.short}</span><strong>{signal.direction}</strong><small>近14日 {signal.recent} 条 · 前期 {signal.previous} 条</small></div><div className="signal-score"><span>影响峰值</span><b>{signal.maxScore}</b></div></article>; })}</div>
             </section>
 
+            <section className="section-block carrier-ranking" id="carrier-ranking">
+              <div className="section-heading ranking-heading"><div><span className="section-index">03</span><div><h2>{carrierData.edition.title}</h2><p>按 FMCSA 备案动力单元排序，逐家公司直达 SAFER 官方档案</p></div></div><a href={carrierData.source.officialDatasetUrl} target="_blank" rel="noreferrer">FMCSA 官方底表 ↗</a></div>
+              <div className="ranking-hero">
+                <div><span className="ranking-kicker">FMCSA FLEET SCALE INDEX</span><h3>看规模，也看数据新鲜度</h3><p>{carrierData.edition.scope}。榜单用于运力研究，不代表营收、服务或安全质量排名。</p></div>
+                <div className="ranking-stats"><div><strong>{carrierData.edition.rankedCount}</strong><span>入榜卡司</span></div><div><strong>{carrierData.edition.candidateCount}</strong><span>初筛候选</span></div><div><strong>{carrierData.edition.sourceUpdatedAt.slice(5).replace("-", ".")}</strong><span>数据更新</span></div></div>
+              </div>
+              <div className="ranking-toolbar"><div><span>排名口径</span><strong>{carrierData.edition.rankMetric}</strong></div><label><span>⌕</span><input data-carrier-search aria-label="搜索卡司榜单" value={carrierQuery} onChange={(event) => setCarrierQuery(event.target.value)} placeholder="搜索卡司、州、USDOT 或货类" /></label><b>{visibleCarriers.length} / 50</b></div>
+              <div className="carrier-table-wrap">
+                <table className="carrier-table">
+                  <thead><tr><th>排名 / 卡司</th><th>总部</th><th>动力单元</th><th>司机</th><th>备案更新</th><th>官方档案</th></tr></thead>
+                  <tbody data-carrier-list>{visibleCarriers.map((carrier) => <tr data-carrier-row data-carrier-search-text={`${carrier.legalName} ${carrier.dbaName} ${carrier.dotNumber} ${carrier.mcNumber} ${carrier.city} ${carrier.state} ${carrier.cargoTypes.join(" ")}`} key={carrier.dotNumber}>
+                    <td><div className={`rank-number ${carrier.rank <= 3 ? "podium" : ""}`}>{String(carrier.rank).padStart(2, "0")}</div><div className="carrier-identity"><strong>{carrier.dbaName || carrier.legalName}</strong>{carrier.dbaName && <span>{carrier.legalName}</span>}<small>USDOT {carrier.dotNumber}{carrier.mcNumber ? ` · ${carrier.mcNumber}` : ""}</small><p>{carrier.profile}</p><div>{carrier.cargoTypes.slice(0, 3).map((cargo) => <i key={cargo}>{cargo}</i>)}{carrier.hazmat && <i className="hazmat">Hazmat</i>}</div></div></td>
+                    <td><strong>{carrier.state}</strong><span>{carrier.city}</span></td>
+                    <td><strong>{carrier.powerUnits.toLocaleString("en-US")}</strong><span>Power units</span></td>
+                    <td><strong>{carrier.totalDrivers.toLocaleString("en-US")}</strong><span>Drivers</span></td>
+                    <td><strong>{carrier.mcs150Date}</strong><span>MCS-150</span></td>
+                    <td><a href={carrier.saferUrl} target="_blank" rel="noreferrer">SAFER ↗</a></td>
+                  </tr>)}</tbody>
+                </table>
+                {visibleCarriers.length === 0 && <div className="empty-state"><strong>没有匹配的卡司</strong><span>请尝试公司名、州简称或 USDOT 编号。</span></div>}
+              </div>
+              <details className="methodology"><summary>查看排名方法与限制 <span>⌄</span></summary><ol>{carrierData.methodology.map((item) => <li key={item}>{item}</li>)}</ol><p>{carrierData.source.retrievalNote}</p><div><a href={carrierData.source.officialProgramUrl} target="_blank" rel="noreferrer">FMCSA 数据发布计划 ↗</a><a href={carrierData.source.saferUrl} target="_blank" rel="noreferrer">SAFER Company Snapshot ↗</a></div></details>
+            </section>
+
             <section className="section-block" id="news">
-              <div className="section-heading news-heading"><div><span className="section-index">03</span><div><h2>{savedOnly ? "我的收藏" : "最新精选"}</h2><p>{savedOnly ? `已收藏 ${bookmarked.length} 条资讯` : "按原文发布或页面更新日期归档，同日资讯集中浏览"}</p></div><span className="range-chip">仅近 {content.edition.windowDays} 天</span></div><a href="https://www.freightwaves.com/news/category/news/trucking" target="_blank" rel="noreferrer">FreightWaves 综合源 ↗</a></div>
+              <div className="section-heading news-heading"><div><span className="section-index">04</span><div><h2>{savedOnly ? "我的收藏" : "最新精选"}</h2><p>{savedOnly ? `已收藏 ${bookmarked.length} 条资讯` : "按原文发布或页面更新日期归档，同日资讯集中浏览"}</p></div><span className="range-chip">仅近 {content.edition.windowDays} 天</span></div><a href="https://www.freightwaves.com/news/category/news/trucking" target="_blank" rel="noreferrer">FreightWaves 综合源 ↗</a></div>
               <div className="filter-row" id="topics">{filters.map((filter) => { const count = filter === "全部" ? windowNews.length : windowNews.filter((item) => item.category === filter).length; return <button data-filter={filter} className={filter === activeFilter && !savedOnly ? "active" : ""} onClick={() => { setActiveFilter(filter); setSavedOnly(false); }} key={filter}>{filter}<b>{count}</b></button>; })}</div>
               <div className="news-list" data-news-list>
                 {groupedNews.map(([date, items]) => <details className="date-group" open key={date}>
